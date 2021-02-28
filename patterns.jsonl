@@ -1,473 +1,473 @@
-{"label": "group_name", "pattern": [{"lower": "Energetic"}, {"lower": "Bear"}]}
-{"label": "group_name", "pattern": [{"lower": "Chinastrats"}]}
-{"label": "group_name", "pattern": [{"lower": "Gamaredon"}, {"lower": "Group"}]}
-{"label": "group_name", "pattern": [{"lower": "HIDDEN"}, {"lower": "COBRA"}]}
-{"label": "group_name", "pattern": [{"lower": "MONSOON"}]}
-{"label": "group_name", "pattern": [{"lower": "Fancy"}, {"lower": "Bear"}]}
-{"label": "group_name", "pattern": [{"lower": "Stone"}, {"lower": "Panda"}]}
-{"label": "group_name", "pattern": [{"lower": "Buckeye"}]}
-{"label": "group_name", "pattern": [{"lower": "Threat"}, {"lower": "Group-1314"}]}
-{"label": "group_name", "pattern": [{"lower": "Poseidon"}, {"lower": "Group"}]}
-{"label": "group_name", "pattern": [{"lower": "WebMasters"}]}
-{"label": "group_name", "pattern": [{"lower": "Equation"}]}
-{"label": "group_name", "pattern": [{"lower": "Threat"}, {"lower": "Group-3390"}]}
-{"label": "group_name", "pattern": [{"lower": "Molerats"}]}
-{"label": "group_name", "pattern": [{"lower": "Lotus"}, {"lower": "Blossom"}]}
-{"label": "group_name", "pattern": [{"lower": "Deputy"}, {"lower": "Dog"}]}
-{"label": "group_name", "pattern": [{"lower": "GCMAN"}]}
-{"label": "group_name", "pattern": [{"lower": "Carbanak"}]}
-{"label": "group_name", "pattern": [{"lower": "Deep"}, {"lower": "Panda"}]}
-{"label": "group_name", "pattern": [{"lower": "DragonOK"}]}
-{"label": "group_name", "pattern": [{"lower": "Strider"}]}
-{"label": "group_name", "pattern": [{"lower": "Shell"}, {"lower": "Crew"}]}
-{"label": "group_name", "pattern": [{"lower": "PittyTiger"}]}
-{"label": "group_name", "pattern": [{"lower": "OilRig"}]}
-{"label": "group_name", "pattern": [{"lower": "IXESHE"}]}
-{"label": "group_name", "pattern": [{"lower": "CVNX"}]}
-{"label": "group_name", "pattern": [{"lower": "ProjectSauron"}]}
-{"label": "group_name", "pattern": [{"lower": "APT10"}]}
-{"label": "group_name", "pattern": [{"lower": "Emissary"}, {"lower": "Panda"}]}
-{"label": "group_name", "pattern": [{"lower": "MSUpdater"}]}
-{"label": "group_name", "pattern": [{"lower": "APT17"}]}
-{"label": "group_name", "pattern": [{"lower": "Blackfly"}]}
-{"label": "group_name", "pattern": [{"lower": "TG-3390"}]}
-{"label": "group_name", "pattern": [{"lower": "Turla"}]}
-{"label": "group_name", "pattern": [{"lower": "The"}, {"lower": "Dukes"}]}
-{"label": "group_name", "pattern": [{"lower": "Winnti"}, {"lower": "Group"}]}
-{"label": "group_name", "pattern": [{"lower": "FIN7"}]}
-{"label": "group_name", "pattern": [{"lower": "Moafee"}]}
-{"label": "group_name", "pattern": [{"lower": "APT3"}]}
-{"label": "group_name", "pattern": [{"lower": "Night"}, {"lower": "Dragon"}]}
-{"label": "group_name", "pattern": [{"lower": "APT16"}]}
-{"label": "group_name", "pattern": [{"lower": "KungFu"}, {"lower": "Kittens"}]}
-{"label": "group_name", "pattern": [{"lower": "Black"}, {"lower": "Vine"}]}
-{"label": "group_name", "pattern": [{"lower": "APT32"}]}
-{"label": "group_name", "pattern": [{"lower": "OceanLotus"}, {"lower": "Group"}]}
-{"label": "group_name", "pattern": [{"lower": "Dropping"}, {"lower": "Elephant"}]}
-{"label": "group_name", "pattern": [{"lower": "TG-2889"}]}
-{"label": "group_name", "pattern": [{"lower": "Guardians"}, {"lower": "of"}, {"lower": "Peace"}]}
-{"label": "group_name", "pattern": [{"lower": "RTM"}]}
-{"label": "group_name", "pattern": [{"lower": "APT1"}]}
-{"label": "group_name", "pattern": [{"lower": "Putter"}, {"lower": "Panda"}]}
-{"label": "group_name", "pattern": [{"lower": "Group5"}]}
-{"label": "group_name", "pattern": [{"lower": "STRONTIUM"}]}
-{"label": "group_name", "pattern": [{"lower": "Red"}, {"lower": "Apollo"}]}
-{"label": "group_name", "pattern": [{"lower": "APT2"}]}
-{"label": "group_name", "pattern": [{"lower": "Comment"}, {"lower": "Group"}]}
-{"label": "group_name", "pattern": [{"lower": "Dynamite"}, {"lower": "Panda"}]}
-{"label": "group_name", "pattern": [{"lower": "Quedagh"}]}
-{"label": "group_name", "pattern": [{"lower": "Darkhotel"}]}
+{"label": "group_name", "pattern": [{"lower": "energetic"}, {"lower": "bear"}]}
+{"label": "group_name", "pattern": [{"lower": "chinastrats"}]}
+{"label": "group_name", "pattern": [{"lower": "gamaredon"}, {"lower": "group"}]}
+{"label": "group_name", "pattern": [{"lower": "hidden"}, {"lower": "cobra"}]}
+{"label": "group_name", "pattern": [{"lower": "monsoon"}]}
+{"label": "group_name", "pattern": [{"lower": "fancy"}, {"lower": "bear"}]}
+{"label": "group_name", "pattern": [{"lower": "stone"}, {"lower": "panda"}]}
+{"label": "group_name", "pattern": [{"lower": "buckeye"}]}
+{"label": "group_name", "pattern": [{"lower": "threat"}, {"lower": "group-1314"}]}
+{"label": "group_name", "pattern": [{"lower": "poseidon"}, {"lower": "group"}]}
+{"label": "group_name", "pattern": [{"lower": "webmasters"}]}
+{"label": "group_name", "pattern": [{"lower": "equation"}]}
+{"label": "group_name", "pattern": [{"lower": "threat"}, {"lower": "group-3390"}]}
+{"label": "group_name", "pattern": [{"lower": "molerats"}]}
+{"label": "group_name", "pattern": [{"lower": "lotus"}, {"lower": "blossom"}]}
+{"label": "group_name", "pattern": [{"lower": "deputy"}, {"lower": "dog"}]}
+{"label": "group_name", "pattern": [{"lower": "gcman"}]}
+{"label": "group_name", "pattern": [{"lower": "carbanak"}]}
+{"label": "group_name", "pattern": [{"lower": "deep"}, {"lower": "panda"}]}
+{"label": "group_name", "pattern": [{"lower": "dragonok"}]}
+{"label": "group_name", "pattern": [{"lower": "strider"}]}
+{"label": "group_name", "pattern": [{"lower": "shell"}, {"lower": "crew"}]}
+{"label": "group_name", "pattern": [{"lower": "pittytiger"}]}
+{"label": "group_name", "pattern": [{"lower": "oilrig"}]}
+{"label": "group_name", "pattern": [{"lower": "ixeshe"}]}
+{"label": "group_name", "pattern": [{"lower": "cvnx"}]}
+{"label": "group_name", "pattern": [{"lower": "projectsauron"}]}
+{"label": "group_name", "pattern": [{"lower": "apt10"}]}
+{"label": "group_name", "pattern": [{"lower": "emissary"}, {"lower": "panda"}]}
+{"label": "group_name", "pattern": [{"lower": "msupdater"}]}
+{"label": "group_name", "pattern": [{"lower": "apt17"}]}
+{"label": "group_name", "pattern": [{"lower": "blackfly"}]}
+{"label": "group_name", "pattern": [{"lower": "tg-3390"}]}
+{"label": "group_name", "pattern": [{"lower": "turla"}]}
+{"label": "group_name", "pattern": [{"lower": "the"}, {"lower": "dukes"}]}
+{"label": "group_name", "pattern": [{"lower": "winnti"}, {"lower": "group"}]}
+{"label": "group_name", "pattern": [{"lower": "fin7"}]}
+{"label": "group_name", "pattern": [{"lower": "moafee"}]}
+{"label": "group_name", "pattern": [{"lower": "apt3"}]}
+{"label": "group_name", "pattern": [{"lower": "night"}, {"lower": "dragon"}]}
+{"label": "group_name", "pattern": [{"lower": "apt16"}]}
+{"label": "group_name", "pattern": [{"lower": "kungfu"}, {"lower": "kittens"}]}
+{"label": "group_name", "pattern": [{"lower": "black"}, {"lower": "vine"}]}
+{"label": "group_name", "pattern": [{"lower": "apt32"}]}
+{"label": "group_name", "pattern": [{"lower": "oceanlotus"}, {"lower": "group"}]}
+{"label": "group_name", "pattern": [{"lower": "dropping"}, {"lower": "elephant"}]}
+{"label": "group_name", "pattern": [{"lower": "tg-2889"}]}
+{"label": "group_name", "pattern": [{"lower": "guardians"}, {"lower": "of"}, {"lower": "peace"}]}
+{"label": "group_name", "pattern": [{"lower": "rtm"}]}
+{"label": "group_name", "pattern": [{"lower": "apt1"}]}
+{"label": "group_name", "pattern": [{"lower": "putter"}, {"lower": "panda"}]}
+{"label": "group_name", "pattern": [{"lower": "group5"}]}
+{"label": "group_name", "pattern": [{"lower": "strontium"}]}
+{"label": "group_name", "pattern": [{"lower": "red"}, {"lower": "apollo"}]}
+{"label": "group_name", "pattern": [{"lower": "apt2"}]}
+{"label": "group_name", "pattern": [{"lower": "comment"}, {"lower": "group"}]}
+{"label": "group_name", "pattern": [{"lower": "dynamite"}, {"lower": "panda"}]}
+{"label": "group_name", "pattern": [{"lower": "quedagh"}]}
+{"label": "group_name", "pattern": [{"lower": "darkhotel"}]}
 {"label": "group_name", "pattern": [{"lower": "admin@338"}]}
-{"label": "group_name", "pattern": [{"lower": "Numbered"}, {"lower": "Panda"}]}
-{"label": "group_name", "pattern": [{"lower": "Operation"}, {"lower": "Molerats"}]}
-{"label": "group_name", "pattern": [{"lower": "Taidoor"}]}
-{"label": "group_name", "pattern": [{"lower": "Naikon"}]}
-{"label": "group_name", "pattern": [{"lower": "Cleaver"}]}
-{"label": "group_name", "pattern": [{"lower": "Threat"}, {"lower": "Group-0416"}]}
-{"label": "group_name", "pattern": [{"lower": "Comment"}, {"lower": "Panda"}]}
-{"label": "group_name", "pattern": [{"lower": "FIN6"}]}
-{"label": "group_name", "pattern": [{"lower": "menuPass"}]}
-{"label": "group_name", "pattern": [{"lower": "UPS"}, {"lower": "Team"}]}
-{"label": "group_name", "pattern": [{"lower": "Axiom"}]}
-{"label": "group_name", "pattern": [{"lower": "Cozy"}, {"lower": "Bear"}]}
-{"label": "group_name", "pattern": [{"lower": "Pirpi"}]}
-{"label": "group_name", "pattern": [{"lower": "Ke3chang"}]}
-{"label": "group_name", "pattern": [{"lower": "Scarlet"}, {"lower": "Mimic"}]}
-{"label": "group_name", "pattern": [{"lower": "FIN10"}]}
-{"label": "group_name", "pattern": [{"lower": "Threat"}, {"lower": "Group-0110"}]}
-{"label": "group_name", "pattern": [{"lower": "Dragonfly"}]}
-{"label": "group_name", "pattern": [{"lower": "Dust"}, {"lower": "Storm"}]}
-{"label": "group_name", "pattern": [{"lower": "Operation"}, {"lower": "Hangover"}]}
-{"label": "group_name", "pattern": [{"lower": "Gothic"}, {"lower": "Panda"}]}
-{"label": "group_name", "pattern": [{"lower": "TG-4127"}]}
-{"label": "group_name", "pattern": [{"lower": "Sandworm"}, {"lower": "Team"}]}
-{"label": "group_name", "pattern": [{"lower": "TG-0110"}]}
-{"label": "group_name", "pattern": [{"lower": "PinkPanther"}]}
-{"label": "group_name", "pattern": [{"lower": "DynCalc"}]}
-{"label": "group_name", "pattern": [{"lower": "Waterbug"}]}
-{"label": "group_name", "pattern": [{"lower": "Sednit"}]}
-{"label": "group_name", "pattern": [{"lower": "Tsar"}, {"lower": "Team"}]}
-{"label": "group_name", "pattern": [{"lower": "APT18"}]}
-{"label": "group_name", "pattern": [{"lower": "Gaza"}, {"lower": "cybergang"}]}
-{"label": "group_name", "pattern": [{"lower": "APT12"}]}
-{"label": "group_name", "pattern": [{"lower": "APT29"}]}
-{"label": "group_name", "pattern": [{"lower": "Pawn"}, {"lower": "Storm"}]}
-{"label": "group_name", "pattern": [{"lower": "Stealth"}, {"lower": "Falcon"}]}
-{"label": "group_name", "pattern": [{"lower": "TG-1314"}]}
-{"label": "group_name", "pattern": [{"lower": "Spring"}, {"lower": "Dragon"}]}
-{"label": "group_name", "pattern": [{"lower": "Anunak"}]}
-{"label": "group_name", "pattern": [{"lower": "APT30"}]}
-{"label": "group_name", "pattern": [{"lower": "Suckfly"}]}
-{"label": "group_name", "pattern": [{"lower": "Patchwork"}]}
-{"label": "group_name", "pattern": [{"lower": "Threat"}, {"lower": "Group"}, {"lower": "2889"}]}
-{"label": "group_name", "pattern": [{"lower": "Threat"}, {"lower": "Group-4127"}]}
-{"label": "group_name", "pattern": [{"lower": "Lazarus"}, {"lower": "Group"}]}
-{"label": "group_name", "pattern": [{"lower": "Comment"}, {"lower": "Crew"}]}
-{"label": "group_name", "pattern": [{"lower": "Sofacy"}]}
-{"label": "group_name", "pattern": [{"lower": "Group"}, {"lower": "72"}]}
-{"label": "group_name", "pattern": [{"lower": "APT28"}]}
-{"label": "group_name", "pattern": [{"lower": "BRONZE"}, {"lower": "UNION"}]}
-{"label": "group_name", "pattern": [{"lower": "TG-0416"}]}
-{"label": "software_name", "pattern": [{"lower": "HammerDuke"}]}
+{"label": "group_name", "pattern": [{"lower": "numbered"}, {"lower": "panda"}]}
+{"label": "group_name", "pattern": [{"lower": "operation"}, {"lower": "molerats"}]}
+{"label": "group_name", "pattern": [{"lower": "taidoor"}]}
+{"label": "group_name", "pattern": [{"lower": "naikon"}]}
+{"label": "group_name", "pattern": [{"lower": "cleaver"}]}
+{"label": "group_name", "pattern": [{"lower": "threat"}, {"lower": "group-0416"}]}
+{"label": "group_name", "pattern": [{"lower": "comment"}, {"lower": "panda"}]}
+{"label": "group_name", "pattern": [{"lower": "fin6"}]}
+{"label": "group_name", "pattern": [{"lower": "menupass"}]}
+{"label": "group_name", "pattern": [{"lower": "ups"}, {"lower": "team"}]}
+{"label": "group_name", "pattern": [{"lower": "axiom"}]}
+{"label": "group_name", "pattern": [{"lower": "cozy"}, {"lower": "bear"}]}
+{"label": "group_name", "pattern": [{"lower": "pirpi"}]}
+{"label": "group_name", "pattern": [{"lower": "ke3chang"}]}
+{"label": "group_name", "pattern": [{"lower": "scarlet"}, {"lower": "mimic"}]}
+{"label": "group_name", "pattern": [{"lower": "fin10"}]}
+{"label": "group_name", "pattern": [{"lower": "threat"}, {"lower": "group-0110"}]}
+{"label": "group_name", "pattern": [{"lower": "dragonfly"}]}
+{"label": "group_name", "pattern": [{"lower": "dust"}, {"lower": "storm"}]}
+{"label": "group_name", "pattern": [{"lower": "operation"}, {"lower": "hangover"}]}
+{"label": "group_name", "pattern": [{"lower": "gothic"}, {"lower": "panda"}]}
+{"label": "group_name", "pattern": [{"lower": "tg-4127"}]}
+{"label": "group_name", "pattern": [{"lower": "sandworm"}, {"lower": "team"}]}
+{"label": "group_name", "pattern": [{"lower": "tg-0110"}]}
+{"label": "group_name", "pattern": [{"lower": "pinkpanther"}]}
+{"label": "group_name", "pattern": [{"lower": "dyncalc"}]}
+{"label": "group_name", "pattern": [{"lower": "waterbug"}]}
+{"label": "group_name", "pattern": [{"lower": "sednit"}]}
+{"label": "group_name", "pattern": [{"lower": "tsar"}, {"lower": "team"}]}
+{"label": "group_name", "pattern": [{"lower": "apt18"}]}
+{"label": "group_name", "pattern": [{"lower": "gaza"}, {"lower": "cybergang"}]}
+{"label": "group_name", "pattern": [{"lower": "apt12"}]}
+{"label": "group_name", "pattern": [{"lower": "apt29"}]}
+{"label": "group_name", "pattern": [{"lower": "pawn"}, {"lower": "storm"}]}
+{"label": "group_name", "pattern": [{"lower": "stealth"}, {"lower": "falcon"}]}
+{"label": "group_name", "pattern": [{"lower": "tg-1314"}]}
+{"label": "group_name", "pattern": [{"lower": "spring"}, {"lower": "dragon"}]}
+{"label": "group_name", "pattern": [{"lower": "anunak"}]}
+{"label": "group_name", "pattern": [{"lower": "apt30"}]}
+{"label": "group_name", "pattern": [{"lower": "suckfly"}]}
+{"label": "group_name", "pattern": [{"lower": "patchwork"}]}
+{"label": "group_name", "pattern": [{"lower": "threat"}, {"lower": "group"}, {"lower": "2889"}]}
+{"label": "group_name", "pattern": [{"lower": "threat"}, {"lower": "group-4127"}]}
+{"label": "group_name", "pattern": [{"lower": "lazarus"}, {"lower": "group"}]}
+{"label": "group_name", "pattern": [{"lower": "comment"}, {"lower": "crew"}]}
+{"label": "group_name", "pattern": [{"lower": "sofacy"}]}
+{"label": "group_name", "pattern": [{"lower": "group"}, {"lower": "72"}]}
+{"label": "group_name", "pattern": [{"lower": "apt28"}]}
+{"label": "group_name", "pattern": [{"lower": "bronze"}, {"lower": "union"}]}
+{"label": "group_name", "pattern": [{"lower": "tg-0416"}]}
+{"label": "software_name", "pattern": [{"lower": "hammerduke"}]}
 {"label": "software_name", "pattern": [{"lower": "nbtstat.exe"}]}
-{"label": "software_name", "pattern": [{"lower": "NeD"}, {"lower": "Worm"}]}
-{"label": "software_name", "pattern": [{"lower": "XTunnel"}]}
-{"label": "software_name", "pattern": [{"lower": "Sys10"}]}
-{"label": "software_name", "pattern": [{"lower": "hcdLoader"}]}
-{"label": "software_name", "pattern": [{"lower": "Enfal"}]}
-{"label": "software_name", "pattern": [{"lower": "ELMER"}]}
-{"label": "software_name", "pattern": [{"lower": "MiniDuke"}]}
-{"label": "software_name", "pattern": [{"lower": "MobileOrder"}]}
+{"label": "software_name", "pattern": [{"lower": "ned"}, {"lower": "worm"}]}
+{"label": "software_name", "pattern": [{"lower": "xtunnel"}]}
+{"label": "software_name", "pattern": [{"lower": "sys10"}]}
+{"label": "software_name", "pattern": [{"lower": "hcdloader"}]}
+{"label": "software_name", "pattern": [{"lower": "enfal"}]}
+{"label": "software_name", "pattern": [{"lower": "elmer"}]}
+{"label": "software_name", "pattern": [{"lower": "miniduke"}]}
+{"label": "software_name", "pattern": [{"lower": "mobileorder"}]}
 {"label": "software_name", "pattern": [{"lower": "systeminfo.exe"}]}
-{"label": "software_name", "pattern": [{"lower": "Ixeshe"}]}
-{"label": "software_name", "pattern": [{"lower": "Arp"}]}
-{"label": "software_name", "pattern": [{"lower": "Windows"}, {"lower": "Credential"}, {"lower": "Editor"}]}
+{"label": "software_name", "pattern": [{"lower": "ixeshe"}]}
+{"label": "software_name", "pattern": [{"lower": "arp"}]}
+{"label": "software_name", "pattern": [{"lower": "windows"}, {"lower": "credential"}, {"lower": "editor"}]}
 {"label": "software_name", "pattern": [{"lower": "netsh"}]}
 {"label": "software_name", "pattern": [{"lower": "cmd.exe"}]}
-{"label": "software_name", "pattern": [{"lower": "SPACESHIP"}]}
-{"label": "software_name", "pattern": [{"lower": "TinyZBot"}]}
-{"label": "software_name", "pattern": [{"lower": "OwaAuth"}]}
-{"label": "software_name", "pattern": [{"lower": "Lecna"}]}
-{"label": "software_name", "pattern": [{"lower": "Derusbi"}]}
+{"label": "software_name", "pattern": [{"lower": "spaceship"}]}
+{"label": "software_name", "pattern": [{"lower": "tinyzbot"}]}
+{"label": "software_name", "pattern": [{"lower": "owaauth"}]}
+{"label": "software_name", "pattern": [{"lower": "lecna"}]}
+{"label": "software_name", "pattern": [{"lower": "derusbi"}]}
 {"label": "software_name", "pattern": [{"lower": "arp.exe"}]}
-{"label": "software_name", "pattern": [{"lower": "HAMMERTOSS"}]}
-{"label": "software_name", "pattern": [{"lower": "WinMM"}]}
-{"label": "software_name", "pattern": [{"lower": "CORESHELL"}]}
-{"label": "software_name", "pattern": [{"lower": "HDoor"}]}
-{"label": "software_name", "pattern": [{"lower": "Komplex"}]}
+{"label": "software_name", "pattern": [{"lower": "hammertoss"}]}
+{"label": "software_name", "pattern": [{"lower": "winmm"}]}
+{"label": "software_name", "pattern": [{"lower": "coreshell"}]}
+{"label": "software_name", "pattern": [{"lower": "hdoor"}]}
+{"label": "software_name", "pattern": [{"lower": "komplex"}]}
 {"label": "software_name", "pattern": [{"lower": "gh0st"}]}
-{"label": "software_name", "pattern": [{"lower": "Win32/USBStealer"}]}
-{"label": "software_name", "pattern": [{"lower": "PowerDuke"}]}
-{"label": "software_name", "pattern": [{"lower": "Trojan.GTALK"}]}
-{"label": "software_name", "pattern": [{"lower": "CHOPSTICK"}]}
-{"label": "software_name", "pattern": [{"lower": "Pisloader"}]}
-{"label": "software_name", "pattern": [{"lower": "Custom"}, {"lower": "HDoor"}]}
-{"label": "software_name", "pattern": [{"lower": "HIDEDRV"}]}
-{"label": "software_name", "pattern": [{"lower": "CozyDuke"}]}
-{"label": "software_name", "pattern": [{"lower": "PinchDuke"}]}
-{"label": "software_name", "pattern": [{"lower": "Psylo"}]}
-{"label": "software_name", "pattern": [{"lower": "Misdat"}]}
-{"label": "software_name", "pattern": [{"lower": "xCmd"}]}
-{"label": "software_name", "pattern": [{"lower": "EvilGrab"}]}
-{"label": "software_name", "pattern": [{"lower": "SOURFACE"}]}
-{"label": "software_name", "pattern": [{"lower": "GLOOXMAIL"}]}
-{"label": "software_name", "pattern": [{"lower": "PsExec"}]}
-{"label": "software_name", "pattern": [{"lower": "SNUGRIDE"}]}
-{"label": "software_name", "pattern": [{"lower": "NETUI"}]}
-{"label": "software_name", "pattern": [{"lower": "SHIPSHAPE"}]}
-{"label": "software_name", "pattern": [{"lower": "Carbanak"}]}
-{"label": "software_name", "pattern": [{"lower": "USB"}, {"lower": "Stealer"}]}
-{"label": "software_name", "pattern": [{"lower": "VIPER"}]}
-{"label": "software_name", "pattern": [{"lower": "Sasfis"}]}
-{"label": "software_name", "pattern": [{"lower": "Remsec"}]}
-{"label": "software_name", "pattern": [{"lower": "ProjectSauron"}]}
-{"label": "software_name", "pattern": [{"lower": "ASPXSpy"}]}
-{"label": "software_name", "pattern": [{"lower": "CALENDAR"}]}
-{"label": "software_name", "pattern": [{"lower": "Backdoor.Oldrea"}]}
-{"label": "software_name", "pattern": [{"lower": "BACKSPACE"}]}
-{"label": "software_name", "pattern": [{"lower": "Nidiran"}]}
-{"label": "software_name", "pattern": [{"lower": "Reg"}]}
-{"label": "software_name", "pattern": [{"lower": "Mivast"}]}
-{"label": "software_name", "pattern": [{"lower": "CozyCar"}]}
+{"label": "software_name", "pattern": [{"lower": "win32/usbstealer"}]}
+{"label": "software_name", "pattern": [{"lower": "powerduke"}]}
+{"label": "software_name", "pattern": [{"lower": "trojan.gtalk"}]}
+{"label": "software_name", "pattern": [{"lower": "chopstick"}]}
+{"label": "software_name", "pattern": [{"lower": "pisloader"}]}
+{"label": "software_name", "pattern": [{"lower": "custom"}, {"lower": "hdoor"}]}
+{"label": "software_name", "pattern": [{"lower": "hidedrv"}]}
+{"label": "software_name", "pattern": [{"lower": "cozyduke"}]}
+{"label": "software_name", "pattern": [{"lower": "pinchduke"}]}
+{"label": "software_name", "pattern": [{"lower": "psylo"}]}
+{"label": "software_name", "pattern": [{"lower": "misdat"}]}
+{"label": "software_name", "pattern": [{"lower": "xcmd"}]}
+{"label": "software_name", "pattern": [{"lower": "evilgrab"}]}
+{"label": "software_name", "pattern": [{"lower": "sourface"}]}
+{"label": "software_name", "pattern": [{"lower": "glooxmail"}]}
+{"label": "software_name", "pattern": [{"lower": "psexec"}]}
+{"label": "software_name", "pattern": [{"lower": "snugride"}]}
+{"label": "software_name", "pattern": [{"lower": "netui"}]}
+{"label": "software_name", "pattern": [{"lower": "shipshape"}]}
+{"label": "software_name", "pattern": [{"lower": "carbanak"}]}
+{"label": "software_name", "pattern": [{"lower": "usb"}, {"lower": "stealer"}]}
+{"label": "software_name", "pattern": [{"lower": "viper"}]}
+{"label": "software_name", "pattern": [{"lower": "sasfis"}]}
+{"label": "software_name", "pattern": [{"lower": "remsec"}]}
+{"label": "software_name", "pattern": [{"lower": "projectsauron"}]}
+{"label": "software_name", "pattern": [{"lower": "aspxspy"}]}
+{"label": "software_name", "pattern": [{"lower": "calendar"}]}
+{"label": "software_name", "pattern": [{"lower": "backdoor.oldrea"}]}
+{"label": "software_name", "pattern": [{"lower": "backspace"}]}
+{"label": "software_name", "pattern": [{"lower": "nidiran"}]}
+{"label": "software_name", "pattern": [{"lower": "reg"}]}
+{"label": "software_name", "pattern": [{"lower": "mivast"}]}
+{"label": "software_name", "pattern": [{"lower": "cozycar"}]}
 {"label": "software_name", "pattern": [{"lower": "schtasks.exe"}]}
-{"label": "software_name", "pattern": [{"lower": "BISCUIT"}]}
-{"label": "software_name", "pattern": [{"lower": "S-Type"}]}
-{"label": "software_name", "pattern": [{"lower": "Net"}]}
-{"label": "software_name", "pattern": [{"lower": "SeaDesk"}]}
+{"label": "software_name", "pattern": [{"lower": "biscuit"}]}
+{"label": "software_name", "pattern": [{"lower": "s-type"}]}
+{"label": "software_name", "pattern": [{"lower": "net"}]}
+{"label": "software_name", "pattern": [{"lower": "seadesk"}]}
 {"label": "software_name", "pattern": [{"lower": "ftp.exe"}]}
-{"label": "software_name", "pattern": [{"lower": "Unknown"}, {"lower": "Logger"}]}
-{"label": "software_name", "pattern": [{"lower": "TEXTMATE"}]}
-{"label": "software_name", "pattern": [{"lower": "Sakula"}]}
+{"label": "software_name", "pattern": [{"lower": "unknown"}, {"lower": "logger"}]}
+{"label": "software_name", "pattern": [{"lower": "textmate"}]}
+{"label": "software_name", "pattern": [{"lower": "sakula"}]}
 {"label": "software_name", "pattern": [{"lower": "netsh.exe"}]}
-{"label": "software_name", "pattern": [{"lower": "TinyBaron"}]}
-{"label": "software_name", "pattern": [{"lower": "Scorpion"}]}
-{"label": "software_name", "pattern": [{"lower": "ADVSTORESHELL"}]}
-{"label": "software_name", "pattern": [{"lower": "Elise"}]}
-{"label": "software_name", "pattern": [{"lower": "Cachedump"}]}
-{"label": "software_name", "pattern": [{"lower": "Trojan.Karagany"}]}
-{"label": "software_name", "pattern": [{"lower": "Token"}, {"lower": "Control"}]}
-{"label": "software_name", "pattern": [{"lower": "Page"}]}
-{"label": "software_name", "pattern": [{"lower": "XAgentOSX"}]}
+{"label": "software_name", "pattern": [{"lower": "tinybaron"}]}
+{"label": "software_name", "pattern": [{"lower": "scorpion"}]}
+{"label": "software_name", "pattern": [{"lower": "advstoreshell"}]}
+{"label": "software_name", "pattern": [{"lower": "elise"}]}
+{"label": "software_name", "pattern": [{"lower": "cachedump"}]}
+{"label": "software_name", "pattern": [{"lower": "trojan.karagany"}]}
+{"label": "software_name", "pattern": [{"lower": "token"}, {"lower": "control"}]}
+{"label": "software_name", "pattern": [{"lower": "page"}]}
+{"label": "software_name", "pattern": [{"lower": "xagentosx"}]}
 {"label": "software_name", "pattern": [{"lower": "pwdump"}]}
-{"label": "software_name", "pattern": [{"lower": "POWERSOURCE"}]}
-{"label": "software_name", "pattern": [{"lower": "Epic"}]}
-{"label": "software_name", "pattern": [{"lower": "BUGJUICE"}]}
+{"label": "software_name", "pattern": [{"lower": "powersource"}]}
+{"label": "software_name", "pattern": [{"lower": "epic"}]}
+{"label": "software_name", "pattern": [{"lower": "bugjuice"}]}
 {"label": "software_name", "pattern": [{"lower": "schtasks"}]}
-{"label": "software_name", "pattern": [{"lower": "HALFBAKED"}]}
-{"label": "software_name", "pattern": [{"lower": "Pteranodon"}]}
-{"label": "software_name", "pattern": [{"lower": "Tasklist"}]}
-{"label": "software_name", "pattern": [{"lower": "RIPTIDE"}]}
-{"label": "software_name", "pattern": [{"lower": "RedLeaves"}]}
-{"label": "software_name", "pattern": [{"lower": "NETEAGLE"}]}
-{"label": "software_name", "pattern": [{"lower": "Emissary"}]}
+{"label": "software_name", "pattern": [{"lower": "halfbaked"}]}
+{"label": "software_name", "pattern": [{"lower": "pteranodon"}]}
+{"label": "software_name", "pattern": [{"lower": "tasklist"}]}
+{"label": "software_name", "pattern": [{"lower": "riptide"}]}
+{"label": "software_name", "pattern": [{"lower": "redleaves"}]}
+{"label": "software_name", "pattern": [{"lower": "neteagle"}]}
+{"label": "software_name", "pattern": [{"lower": "emissary"}]}
 {"label": "software_name", "pattern": [{"lower": "reg.exe"}]}
-{"label": "software_name", "pattern": [{"lower": "MiniDionis"}]}
-{"label": "software_name", "pattern": [{"lower": "RTM"}]}
-{"label": "software_name", "pattern": [{"lower": "3PARA"}, {"lower": "RAT"}]}
+{"label": "software_name", "pattern": [{"lower": "minidionis"}]}
+{"label": "software_name", "pattern": [{"lower": "rtm"}]}
+{"label": "software_name", "pattern": [{"lower": "3para"}, {"lower": "rat"}]}
 {"label": "software_name", "pattern": [{"lower": "httpclient"}]}
-{"label": "software_name", "pattern": [{"lower": "Systeminfo"}]}
-{"label": "software_name", "pattern": [{"lower": "Backdoor.Nidiran"}]}
-{"label": "software_name", "pattern": [{"lower": "OnionDuke"}]}
-{"label": "software_name", "pattern": [{"lower": "CloudLook"}]}
-{"label": "software_name", "pattern": [{"lower": "SOUNDBITE"}]}
+{"label": "software_name", "pattern": [{"lower": "systeminfo"}]}
+{"label": "software_name", "pattern": [{"lower": "backdoor.nidiran"}]}
+{"label": "software_name", "pattern": [{"lower": "onionduke"}]}
+{"label": "software_name", "pattern": [{"lower": "cloudlook"}]}
+{"label": "software_name", "pattern": [{"lower": "soundbite"}]}
 {"label": "software_name", "pattern": [{"lower": "ipconfig.exe"}]}
 {"label": "software_name", "pattern": [{"lower": "nbtstat"}]}
-{"label": "software_name", "pattern": [{"lower": "JHUHUGIT"}]}
+{"label": "software_name", "pattern": [{"lower": "jhuhugit"}]}
 {"label": "software_name", "pattern": [{"lower": "cmd"}]}
-{"label": "software_name", "pattern": [{"lower": "Backdoor.APT.CookieCutter"}]}
-{"label": "software_name", "pattern": [{"lower": "Backdoor.Remsec"}]}
-{"label": "software_name", "pattern": [{"lower": "HTTPBrowser"}]}
+{"label": "software_name", "pattern": [{"lower": "backdoor.apt.cookiecutter"}]}
+{"label": "software_name", "pattern": [{"lower": "backdoor.remsec"}]}
+{"label": "software_name", "pattern": [{"lower": "httpbrowser"}]}
 {"label": "software_name", "pattern": [{"lower": "pngdowner"}]}
-{"label": "software_name", "pattern": [{"lower": "Uroburos"}]}
-{"label": "software_name", "pattern": [{"lower": "StreamEx"}]}
-{"label": "software_name", "pattern": [{"lower": "BLACKCOFFEE"}]}
-{"label": "software_name", "pattern": [{"lower": "WCE"}]}
-{"label": "software_name", "pattern": [{"lower": "USBStealer"}]}
-{"label": "software_name", "pattern": [{"lower": "SPLM"}]}
+{"label": "software_name", "pattern": [{"lower": "uroburos"}]}
+{"label": "software_name", "pattern": [{"lower": "streamex"}]}
+{"label": "software_name", "pattern": [{"lower": "blackcoffee"}]}
+{"label": "software_name", "pattern": [{"lower": "wce"}]}
+{"label": "software_name", "pattern": [{"lower": "usbstealer"}]}
+{"label": "software_name", "pattern": [{"lower": "splm"}]}
 {"label": "software_name", "pattern": [{"lower": "netstat"}]}
-{"label": "software_name", "pattern": [{"lower": "SeaDaddy"}]}
-{"label": "software_name", "pattern": [{"lower": "NetC"}]}
-{"label": "software_name", "pattern": [{"lower": "KOMPROGO"}]}
-{"label": "software_name", "pattern": [{"lower": "Lurid"}]}
-{"label": "software_name", "pattern": [{"lower": "BUBBLEWRAP"}]}
-{"label": "software_name", "pattern": [{"lower": "WINDSHIELD"}]}
-{"label": "software_name", "pattern": [{"lower": "Pirpi"}]}
-{"label": "software_name", "pattern": [{"lower": "PoisonIvy"}]}
+{"label": "software_name", "pattern": [{"lower": "seadaddy"}]}
+{"label": "software_name", "pattern": [{"lower": "netc"}]}
+{"label": "software_name", "pattern": [{"lower": "komprogo"}]}
+{"label": "software_name", "pattern": [{"lower": "lurid"}]}
+{"label": "software_name", "pattern": [{"lower": "bubblewrap"}]}
+{"label": "software_name", "pattern": [{"lower": "windshield"}]}
+{"label": "software_name", "pattern": [{"lower": "pirpi"}]}
+{"label": "software_name", "pattern": [{"lower": "poisonivy"}]}
 {"label": "software_name", "pattern": [{"lower": "ping.exe"}]}
-{"label": "software_name", "pattern": [{"lower": "Poison"}, {"lower": "Ivy"}]}
-{"label": "software_name", "pattern": [{"lower": "HttpDump"}]}
-{"label": "software_name", "pattern": [{"lower": "PlugX"}]}
-{"label": "software_name", "pattern": [{"lower": "Kaba"}]}
-{"label": "software_name", "pattern": [{"lower": "SslMM"}]}
-{"label": "software_name", "pattern": [{"lower": "Winnti"}]}
-{"label": "software_name", "pattern": [{"lower": "HAYMAKER"}]}
-{"label": "software_name", "pattern": [{"lower": "Seduploader"}]}
-{"label": "software_name", "pattern": [{"lower": "CosmicDuke"}]}
-{"label": "software_name", "pattern": [{"lower": "GeminiDuke"}]}
-{"label": "software_name", "pattern": [{"lower": "ComRAT"}]}
-{"label": "software_name", "pattern": [{"lower": "SeaDuke"}]}
-{"label": "software_name", "pattern": [{"lower": "AutoIt"}]}
-{"label": "software_name", "pattern": [{"lower": "Mis-Type"}]}
-{"label": "software_name", "pattern": [{"lower": "ChChes"}]}
-{"label": "software_name", "pattern": [{"lower": "ZLib"}]}
-{"label": "software_name", "pattern": [{"lower": "Sogu"}]}
-{"label": "software_name", "pattern": [{"lower": "ASPXTool"}]}
-{"label": "software_name", "pattern": [{"lower": "LOWBALL"}]}
-{"label": "software_name", "pattern": [{"lower": "DustySky"}]}
-{"label": "software_name", "pattern": [{"lower": "Mimikatz"}]}
-{"label": "software_name", "pattern": [{"lower": "Black"}, {"lower": "Energy"}]}
-{"label": "software_name", "pattern": [{"lower": "FakeM"}]}
-{"label": "software_name", "pattern": [{"lower": "4H"}, {"lower": "RAT"}]}
-{"label": "software_name", "pattern": [{"lower": "CallMe"}]}
-{"label": "software_name", "pattern": [{"lower": "China"}, {"lower": "Chopper"}]}
-{"label": "software_name", "pattern": [{"lower": "WEBC2"}]}
+{"label": "software_name", "pattern": [{"lower": "poison"}, {"lower": "ivy"}]}
+{"label": "software_name", "pattern": [{"lower": "httpdump"}]}
+{"label": "software_name", "pattern": [{"lower": "plugx"}]}
+{"label": "software_name", "pattern": [{"lower": "kaba"}]}
+{"label": "software_name", "pattern": [{"lower": "sslmm"}]}
+{"label": "software_name", "pattern": [{"lower": "winnti"}]}
+{"label": "software_name", "pattern": [{"lower": "haymaker"}]}
+{"label": "software_name", "pattern": [{"lower": "seduploader"}]}
+{"label": "software_name", "pattern": [{"lower": "cosmicduke"}]}
+{"label": "software_name", "pattern": [{"lower": "geminiduke"}]}
+{"label": "software_name", "pattern": [{"lower": "comrat"}]}
+{"label": "software_name", "pattern": [{"lower": "seaduke"}]}
+{"label": "software_name", "pattern": [{"lower": "autoit"}]}
+{"label": "software_name", "pattern": [{"lower": "mis-type"}]}
+{"label": "software_name", "pattern": [{"lower": "chches"}]}
+{"label": "software_name", "pattern": [{"lower": "zlib"}]}
+{"label": "software_name", "pattern": [{"lower": "sogu"}]}
+{"label": "software_name", "pattern": [{"lower": "aspxtool"}]}
+{"label": "software_name", "pattern": [{"lower": "lowball"}]}
+{"label": "software_name", "pattern": [{"lower": "dustysky"}]}
+{"label": "software_name", "pattern": [{"lower": "mimikatz"}]}
+{"label": "software_name", "pattern": [{"lower": "black"}, {"lower": "energy"}]}
+{"label": "software_name", "pattern": [{"lower": "fakem"}]}
+{"label": "software_name", "pattern": [{"lower": "4h"}, {"lower": "rat"}]}
+{"label": "software_name", "pattern": [{"lower": "callme"}]}
+{"label": "software_name", "pattern": [{"lower": "china"}, {"lower": "chopper"}]}
+{"label": "software_name", "pattern": [{"lower": "webc2"}]}
 {"label": "software_name", "pattern": [{"lower": "net.exe"}]}
-{"label": "software_name", "pattern": [{"lower": "POSHSPY"}]}
-{"label": "software_name", "pattern": [{"lower": "FLASHFLOOD"}]}
-{"label": "software_name", "pattern": [{"lower": "XAPS"}]}
+{"label": "software_name", "pattern": [{"lower": "poshspy"}]}
+{"label": "software_name", "pattern": [{"lower": "flashflood"}]}
+{"label": "software_name", "pattern": [{"lower": "xaps"}]}
 {"label": "software_name", "pattern": [{"lower": "gsecdump"}]}
-{"label": "software_name", "pattern": [{"lower": "BlackEnergy"}]}
-{"label": "software_name", "pattern": [{"lower": "Ping"}]}
-{"label": "software_name", "pattern": [{"lower": "Backdoor.APT.FakeWinHTTPHelper"}]}
+{"label": "software_name", "pattern": [{"lower": "blackenergy"}]}
+{"label": "software_name", "pattern": [{"lower": "ping"}]}
+{"label": "software_name", "pattern": [{"lower": "backdoor.apt.fakewinhttphelper"}]}
 {"label": "software_name", "pattern": [{"lower": "netstat.exe"}]}
-{"label": "software_name", "pattern": [{"lower": "X-Tunnel"}]}
-{"label": "software_name", "pattern": [{"lower": "RARSTONE"}]}
-{"label": "software_name", "pattern": [{"lower": "Sakurel"}]}
-{"label": "software_name", "pattern": [{"lower": "OLDBAIT"}]}
-{"label": "software_name", "pattern": [{"lower": "SHOTPUT"}]}
-{"label": "software_name", "pattern": [{"lower": "Tavdig"}]}
-{"label": "software_name", "pattern": [{"lower": "Anunak"}]}
-{"label": "software_name", "pattern": [{"lower": "CloudDuke"}]}
-{"label": "software_name", "pattern": [{"lower": "Lslsass"}]}
-{"label": "software_name", "pattern": [{"lower": "FTP"}]}
+{"label": "software_name", "pattern": [{"lower": "x-tunnel"}]}
+{"label": "software_name", "pattern": [{"lower": "rarstone"}]}
+{"label": "software_name", "pattern": [{"lower": "sakurel"}]}
+{"label": "software_name", "pattern": [{"lower": "oldbait"}]}
+{"label": "software_name", "pattern": [{"lower": "shotput"}]}
+{"label": "software_name", "pattern": [{"lower": "tavdig"}]}
+{"label": "software_name", "pattern": [{"lower": "anunak"}]}
+{"label": "software_name", "pattern": [{"lower": "cloudduke"}]}
+{"label": "software_name", "pattern": [{"lower": "lslsass"}]}
+{"label": "software_name", "pattern": [{"lower": "ftp"}]}
 {"label": "software_name", "pattern": [{"lower": "ipconfig"}]}
-{"label": "software_name", "pattern": [{"lower": "DNSMessenger"}]}
-{"label": "software_name", "pattern": [{"lower": "Hikit"}]}
-{"label": "software_name", "pattern": [{"lower": "TINYTYPHON"}]}
-{"label": "software_name", "pattern": [{"lower": "BADNEWS"}]}
-{"label": "software_name", "pattern": [{"lower": "PHOREAL"}]}
-{"label": "software_name", "pattern": [{"lower": "BKDR_ESILE"}]}
-{"label": "software_name", "pattern": [{"lower": "Cobalt"}, {"lower": "Strike"}]}
-{"label": "software_name", "pattern": [{"lower": "Pass-The-Hash"}, {"lower": "Toolkit"}]}
-{"label": "software_name", "pattern": [{"lower": "Net"}, {"lower": "Crawler"}]}
-{"label": "software_name", "pattern": [{"lower": "NetDuke"}]}
-{"label": "software_name", "pattern": [{"lower": "Havex"}]}
-{"label": "technique_name", "pattern": [{"lower": "Code"}, {"lower": "Signing"}]}
-{"label": "technique_name", "pattern": [{"lower": "Access"}, {"lower": "Token"}, {"lower": "Manipulation"}]}
-{"label": "technique_name", "pattern": [{"lower": "Re-opened"}, {"lower": "Applications"}]}
-{"label": "technique_name", "pattern": [{"lower": "Shortcut"}, {"lower": "Modification"}]}
-{"label": "technique_name", "pattern": [{"lower": "Service"}, {"lower": "Registry"}, {"lower": "Permissions"}, {"lower": "Weakness"}]}
-{"label": "technique_name", "pattern": [{"lower": "Pass"}, {"lower": "the"}, {"lower": "Ticket"}]}
-{"label": "technique_name", "pattern": [{"lower": "Input"}, {"lower": "Prompt"}]}
-{"label": "technique_name", "pattern": [{"lower": "Execution"}, {"lower": "through"}, {"lower": "Module"}, {"lower": "Load"}]}
-{"label": "technique_name", "pattern": [{"lower": "Network"}, {"lower": "Sniffing"}]}
-{"label": "technique_name", "pattern": [{"lower": "Registry"}, {"lower": "Run"}, {"lower": "Keys"}, {"lower": "/"}, {"lower": "Start"}, {"lower": "Folder"}]}
-{"label": "technique_name", "pattern": [{"lower": "Pass"}, {"lower": "the"}, {"lower": "Hash"}]}
-{"label": "technique_name", "pattern": [{"lower": "Application"}, {"lower": "Shimming"}]}
-{"label": "technique_name", "pattern": [{"lower": "Office"}, {"lower": "Application"}, {"lower": "Startup"}]}
-{"label": "technique_name", "pattern": [{"lower": "File"}, {"lower": "System"}, {"lower": "Permissions"}, {"lower": "Weakness"}]}
-{"label": "technique_name", "pattern": [{"lower": "Clear"}, {"lower": "Command"}, {"lower": "History"}]}
-{"label": "technique_name", "pattern": [{"lower": "Windows"}, {"lower": "Management"}, {"lower": "Instrumentation"}, {"lower": "Event"}, {"lower": "Subscription"}]}
-{"label": "technique_name", "pattern": [{"lower": "Connection"}, {"lower": "Proxy"}]}
-{"label": "technique_name", "pattern": [{"lower": "Cron"}, {"lower": "Job"}]}
-{"label": "technique_name", "pattern": [{"lower": "Component"}, {"lower": "Firmware"}]}
-{"label": "technique_name", "pattern": [{"lower": "Network"}, {"lower": "Share"}, {"lower": "Connection"}, {"lower": "Removal"}]}
-{"label": "technique_name", "pattern": [{"lower": "Security"}, {"lower": "Support"}, {"lower": "Provider"}]}
-{"label": "technique_name", "pattern": [{"lower": "Fallback"}, {"lower": "Channels"}]}
-{"label": "technique_name", "pattern": [{"lower": "Login"}, {"lower": "Item"}]}
-{"label": "technique_name", "pattern": [{"lower": "Masquerading"}]}
-{"label": "technique_name", "pattern": [{"lower": "Obfuscated"}, {"lower": "Files"}, {"lower": "or"}, {"lower": "Information"}]}
-{"label": "technique_name", "pattern": [{"lower": "Commonly"}, {"lower": "Used"}, {"lower": "Port"}]}
-{"label": "technique_name", "pattern": [{"lower": "Netsh"}, {"lower": "Helper"}, {"lower": "DLL"}]}
-{"label": "technique_name", "pattern": [{"lower": "System"}, {"lower": "Time"}, {"lower": "Discovery"}]}
-{"label": "technique_name", "pattern": [{"lower": "Remote"}, {"lower": "File"}, {"lower": "Copy"}]}
-{"label": "technique_name", "pattern": [{"lower": "Screen"}, {"lower": "Capture"}]}
-{"label": "technique_name", "pattern": [{"lower": "Hypervisor"}]}
-{"label": "technique_name", "pattern": [{"lower": "Remote"}, {"lower": "System"}, {"lower": "Discovery"}]}
-{"label": "technique_name", "pattern": [{"lower": "Sudo"}]}
-{"label": "technique_name", "pattern": [{"lower": "Standard"}, {"lower": "Application"}, {"lower": "Layer"}, {"lower": "Protocol"}]}
-{"label": "technique_name", "pattern": [{"lower": "Web"}, {"lower": "Shell"}]}
-{"label": "technique_name", "pattern": [{"lower": "Third-party"}, {"lower": "Software"}]}
-{"label": "technique_name", "pattern": [{"lower": "Data"}, {"lower": "from"}, {"lower": "Network"}, {"lower": "Shared"}, {"lower": "Drive"}]}
-{"label": "technique_name", "pattern": [{"lower": "System"}, {"lower": "Network"}, {"lower": "Configuration"}, {"lower": "Discovery"}]}
-{"label": "technique_name", "pattern": [{"lower": "Video"}, {"lower": "Capture"}]}
-{"label": "technique_name", "pattern": [{"lower": "Rc.common"}]}
+{"label": "software_name", "pattern": [{"lower": "dnsmessenger"}]}
+{"label": "software_name", "pattern": [{"lower": "hikit"}]}
+{"label": "software_name", "pattern": [{"lower": "tinytyphon"}]}
+{"label": "software_name", "pattern": [{"lower": "badnews"}]}
+{"label": "software_name", "pattern": [{"lower": "phoreal"}]}
+{"label": "software_name", "pattern": [{"lower": "bkdr_esile"}]}
+{"label": "software_name", "pattern": [{"lower": "cobalt"}, {"lower": "strike"}]}
+{"label": "software_name", "pattern": [{"lower": "pass-the-hash"}, {"lower": "toolkit"}]}
+{"label": "software_name", "pattern": [{"lower": "net"}, {"lower": "crawler"}]}
+{"label": "software_name", "pattern": [{"lower": "netduke"}]}
+{"label": "software_name", "pattern": [{"lower": "havex"}]}
+{"label": "technique_name", "pattern": [{"lower": "code"}, {"lower": "signing"}]}
+{"label": "technique_name", "pattern": [{"lower": "access"}, {"lower": "token"}, {"lower": "manipulation"}]}
+{"label": "technique_name", "pattern": [{"lower": "re-opened"}, {"lower": "applications"}]}
+{"label": "technique_name", "pattern": [{"lower": "shortcut"}, {"lower": "modification"}]}
+{"label": "technique_name", "pattern": [{"lower": "service"}, {"lower": "registry"}, {"lower": "permissions"}, {"lower": "weakness"}]}
+{"label": "technique_name", "pattern": [{"lower": "pass"}, {"lower": "the"}, {"lower": "ticket"}]}
+{"label": "technique_name", "pattern": [{"lower": "input"}, {"lower": "prompt"}]}
+{"label": "technique_name", "pattern": [{"lower": "execution"}, {"lower": "through"}, {"lower": "module"}, {"lower": "load"}]}
+{"label": "technique_name", "pattern": [{"lower": "network"}, {"lower": "sniffing"}]}
+{"label": "technique_name", "pattern": [{"lower": "registry"}, {"lower": "run"}, {"lower": "keys"}, {"lower": "/"}, {"lower": "start"}, {"lower": "folder"}]}
+{"label": "technique_name", "pattern": [{"lower": "pass"}, {"lower": "the"}, {"lower": "hash"}]}
+{"label": "technique_name", "pattern": [{"lower": "application"}, {"lower": "shimming"}]}
+{"label": "technique_name", "pattern": [{"lower": "office"}, {"lower": "application"}, {"lower": "startup"}]}
+{"label": "technique_name", "pattern": [{"lower": "file"}, {"lower": "system"}, {"lower": "permissions"}, {"lower": "weakness"}]}
+{"label": "technique_name", "pattern": [{"lower": "clear"}, {"lower": "command"}, {"lower": "history"}]}
+{"label": "technique_name", "pattern": [{"lower": "windows"}, {"lower": "management"}, {"lower": "instrumentation"}, {"lower": "event"}, {"lower": "subscription"}]}
+{"label": "technique_name", "pattern": [{"lower": "connection"}, {"lower": "proxy"}]}
+{"label": "technique_name", "pattern": [{"lower": "cron"}, {"lower": "job"}]}
+{"label": "technique_name", "pattern": [{"lower": "component"}, {"lower": "firmware"}]}
+{"label": "technique_name", "pattern": [{"lower": "network"}, {"lower": "share"}, {"lower": "connection"}, {"lower": "removal"}]}
+{"label": "technique_name", "pattern": [{"lower": "security"}, {"lower": "support"}, {"lower": "provider"}]}
+{"label": "technique_name", "pattern": [{"lower": "fallback"}, {"lower": "channels"}]}
+{"label": "technique_name", "pattern": [{"lower": "login"}, {"lower": "item"}]}
+{"label": "technique_name", "pattern": [{"lower": "masquerading"}]}
+{"label": "technique_name", "pattern": [{"lower": "obfuscated"}, {"lower": "files"}, {"lower": "or"}, {"lower": "information"}]}
+{"label": "technique_name", "pattern": [{"lower": "commonly"}, {"lower": "used"}, {"lower": "port"}]}
+{"label": "technique_name", "pattern": [{"lower": "netsh"}, {"lower": "helper"}, {"lower": "dll"}]}
+{"label": "technique_name", "pattern": [{"lower": "system"}, {"lower": "time"}, {"lower": "discovery"}]}
+{"label": "technique_name", "pattern": [{"lower": "remote"}, {"lower": "file"}, {"lower": "copy"}]}
+{"label": "technique_name", "pattern": [{"lower": "screen"}, {"lower": "capture"}]}
+{"label": "technique_name", "pattern": [{"lower": "hypervisor"}]}
+{"label": "technique_name", "pattern": [{"lower": "remote"}, {"lower": "system"}, {"lower": "discovery"}]}
+{"label": "technique_name", "pattern": [{"lower": "sudo"}]}
+{"label": "technique_name", "pattern": [{"lower": "standard"}, {"lower": "application"}, {"lower": "layer"}, {"lower": "protocol"}]}
+{"label": "technique_name", "pattern": [{"lower": "web"}, {"lower": "shell"}]}
+{"label": "technique_name", "pattern": [{"lower": "third-party"}, {"lower": "software"}]}
+{"label": "technique_name", "pattern": [{"lower": "data"}, {"lower": "from"}, {"lower": "network"}, {"lower": "shared"}, {"lower": "drive"}]}
+{"label": "technique_name", "pattern": [{"lower": "system"}, {"lower": "network"}, {"lower": "configuration"}, {"lower": "discovery"}]}
+{"label": "technique_name", "pattern": [{"lower": "video"}, {"lower": "capture"}]}
+{"label": "technique_name", "pattern": [{"lower": "rc.common"}]}
 {"label": "technique_name", "pattern": [{"lower": ".bash_profile"}, {"lower": "and"}, {"lower": ".bashrc"}]}
-{"label": "technique_name", "pattern": [{"lower": "Data"}, {"lower": "Encrypted"}]}
-{"label": "technique_name", "pattern": [{"lower": "Data"}, {"lower": "from"}, {"lower": "Local"}, {"lower": "System"}]}
-{"label": "technique_name", "pattern": [{"lower": "Windows"}, {"lower": "Admin"}, {"lower": "Shares"}]}
-{"label": "technique_name", "pattern": [{"lower": "System"}, {"lower": "Firmware"}]}
-{"label": "technique_name", "pattern": [{"lower": "Application"}, {"lower": "Deployment"}, {"lower": "Software"}]}
-{"label": "technique_name", "pattern": [{"lower": "AppInit"}, {"lower": "DLLs"}]}
-{"label": "technique_name", "pattern": [{"lower": "Credentials"}, {"lower": "in"}, {"lower": "Files"}]}
-{"label": "technique_name", "pattern": [{"lower": "Multiband"}, {"lower": "Communication"}]}
-{"label": "technique_name", "pattern": [{"lower": "Brute"}, {"lower": "Force"}]}
-{"label": "technique_name", "pattern": [{"lower": "Scripting"}]}
-{"label": "technique_name", "pattern": [{"lower": "PowerShell"}]}
-{"label": "technique_name", "pattern": [{"lower": "DLL"}, {"lower": "Injection"}]}
-{"label": "technique_name", "pattern": [{"lower": "Custom"}, {"lower": "Command"}, {"lower": "and"}, {"lower": "Control"}, {"lower": "Protocol"}]}
-{"label": "technique_name", "pattern": [{"lower": "Input"}, {"lower": "Capture"}]}
-{"label": "technique_name", "pattern": [{"lower": "File"}, {"lower": "System"}, {"lower": "Logical"}, {"lower": "Offsets"}]}
-{"label": "technique_name", "pattern": [{"lower": "Scheduled"}, {"lower": "Transfer"}]}
-{"label": "technique_name", "pattern": [{"lower": "Exfiltration"}, {"lower": "Over"}, {"lower": "Physical"}, {"lower": "Medium"}]}
-{"label": "technique_name", "pattern": [{"lower": "Uncommonly"}, {"lower": "Used"}, {"lower": "Port"}]}
-{"label": "technique_name", "pattern": [{"lower": "Logon"}, {"lower": "Scripts"}]}
-{"label": "technique_name", "pattern": [{"lower": "Bootkit"}]}
-{"label": "technique_name", "pattern": [{"lower": "Startup"}, {"lower": "Items"}]}
-{"label": "technique_name", "pattern": [{"lower": "File"}, {"lower": "and"}, {"lower": "Directory"}, {"lower": "Discovery"}]}
-{"label": "technique_name", "pattern": [{"lower": "Exfiltration"}, {"lower": "Over"}, {"lower": "Alternative"}, {"lower": "Protocol"}]}
-{"label": "technique_name", "pattern": [{"lower": "Hidden"}, {"lower": "Users"}]}
-{"label": "technique_name", "pattern": [{"lower": "Remote"}, {"lower": "Desktop"}, {"lower": "Protocol"}]}
-{"label": "technique_name", "pattern": [{"lower": "Plist"}, {"lower": "Modification"}]}
-{"label": "technique_name", "pattern": [{"lower": "Audio"}, {"lower": "Capture"}]}
-{"label": "technique_name", "pattern": [{"lower": "Launch"}, {"lower": "Daemon"}]}
-{"label": "technique_name", "pattern": [{"lower": "Automated"}, {"lower": "Exfiltration"}]}
-{"label": "technique_name", "pattern": [{"lower": "Command-Line"}, {"lower": "Interface"}]}
-{"label": "technique_name", "pattern": [{"lower": "External"}, {"lower": "Remote"}, {"lower": "Services"}]}
-{"label": "technique_name", "pattern": [{"lower": "Rundll32"}]}
-{"label": "technique_name", "pattern": [{"lower": "Web"}, {"lower": "Service"}]}
-{"label": "technique_name", "pattern": [{"lower": "File"}, {"lower": "Deletion"}]}
-{"label": "technique_name", "pattern": [{"lower": "DLL"}, {"lower": "Side-Loading"}]}
-{"label": "technique_name", "pattern": [{"lower": "NTFS"}, {"lower": "Extended"}, {"lower": "Attributes"}]}
-{"label": "technique_name", "pattern": [{"lower": "Account"}, {"lower": "Discovery"}]}
-{"label": "technique_name", "pattern": [{"lower": "Network"}, {"lower": "Service"}, {"lower": "Scanning"}]}
-{"label": "technique_name", "pattern": [{"lower": "Gatekeeper"}, {"lower": "Bypass"}]}
-{"label": "technique_name", "pattern": [{"lower": "Remote"}, {"lower": "Services"}]}
-{"label": "technique_name", "pattern": [{"lower": "Hidden"}, {"lower": "Window"}]}
-{"label": "technique_name", "pattern": [{"lower": "Source"}]}
-{"label": "technique_name", "pattern": [{"lower": "Replication"}, {"lower": "Through"}, {"lower": "Removable"}, {"lower": "Media"}]}
-{"label": "technique_name", "pattern": [{"lower": "Hidden"}, {"lower": "Files"}, {"lower": "and"}, {"lower": "Directories"}]}
-{"label": "technique_name", "pattern": [{"lower": "Trusted"}, {"lower": "Developer"}, {"lower": "Utilities"}]}
-{"label": "technique_name", "pattern": [{"lower": "Email"}, {"lower": "Collection"}]}
-{"label": "technique_name", "pattern": [{"lower": "Exploitation"}, {"lower": "of"}, {"lower": "Vulnerability"}]}
-{"label": "technique_name", "pattern": [{"lower": "Two-Factor"}, {"lower": "Authentication"}, {"lower": "Interception"}]}
-{"label": "technique_name", "pattern": [{"lower": "Valid"}, {"lower": "Accounts"}]}
-{"label": "technique_name", "pattern": [{"lower": "Timestomp"}]}
-{"label": "technique_name", "pattern": [{"lower": "Data"}, {"lower": "Staged"}]}
-{"label": "technique_name", "pattern": [{"lower": "System"}, {"lower": "Service"}, {"lower": "Discovery"}]}
-{"label": "technique_name", "pattern": [{"lower": "Standard"}, {"lower": "Cryptographic"}, {"lower": "Protocol"}]}
-{"label": "technique_name", "pattern": [{"lower": "New"}, {"lower": "Service"}]}
-{"label": "technique_name", "pattern": [{"lower": "Disabling"}, {"lower": "Security"}, {"lower": "Tools"}]}
-{"label": "technique_name", "pattern": [{"lower": "Rootkit"}]}
-{"label": "technique_name", "pattern": [{"lower": "Custom"}, {"lower": "Cryptographic"}, {"lower": "Protocol"}]}
-{"label": "technique_name", "pattern": [{"lower": "Exfiltration"}, {"lower": "Over"}, {"lower": "Command"}, {"lower": "and"}, {"lower": "Control"}, {"lower": "Channel"}]}
-{"label": "technique_name", "pattern": [{"lower": "LC_MAIN"}, {"lower": "Hijacking"}]}
-{"label": "technique_name", "pattern": [{"lower": "Application"}, {"lower": "Window"}, {"lower": "Discovery"}]}
-{"label": "technique_name", "pattern": [{"lower": "Install"}, {"lower": "Root"}, {"lower": "Certificate"}]}
-{"label": "technique_name", "pattern": [{"lower": "AppleScript"}]}
-{"label": "technique_name", "pattern": [{"lower": "Winlogon"}, {"lower": "Helper"}, {"lower": "DLL"}]}
-{"label": "technique_name", "pattern": [{"lower": "Exfiltration"}, {"lower": "Over"}, {"lower": "Other"}, {"lower": "Network"}, {"lower": "Medium"}]}
-{"label": "technique_name", "pattern": [{"lower": "Indicator"}, {"lower": "Removal"}, {"lower": "from"}, {"lower": "Tools"}]}
-{"label": "technique_name", "pattern": [{"lower": "LC_LOAD_DYLIB"}, {"lower": "Addition"}]}
-{"label": "technique_name", "pattern": [{"lower": "Data"}, {"lower": "from"}, {"lower": "Removable"}, {"lower": "Media"}]}
-{"label": "technique_name", "pattern": [{"lower": "Service"}, {"lower": "Execution"}]}
-{"label": "technique_name", "pattern": [{"lower": "Modify"}, {"lower": "Registry"}]}
-{"label": "technique_name", "pattern": [{"lower": "Account"}, {"lower": "Manipulation"}]}
-{"label": "technique_name", "pattern": [{"lower": "Communication"}, {"lower": "Through"}, {"lower": "Removable"}, {"lower": "Media"}]}
-{"label": "technique_name", "pattern": [{"lower": "Security"}, {"lower": "Software"}, {"lower": "Discovery"}]}
-{"label": "technique_name", "pattern": [{"lower": "Binary"}, {"lower": "Padding"}]}
-{"label": "technique_name", "pattern": [{"lower": "Data"}, {"lower": "Compressed"}]}
-{"label": "technique_name", "pattern": [{"lower": "Windows"}, {"lower": "Remote"}, {"lower": "Management"}]}
-{"label": "technique_name", "pattern": [{"lower": "Software"}, {"lower": "Packing"}]}
-{"label": "technique_name", "pattern": [{"lower": "Multi-Stage"}, {"lower": "Channels"}]}
-{"label": "technique_name", "pattern": [{"lower": "Local"}, {"lower": "Port"}, {"lower": "Monitor"}]}
-{"label": "technique_name", "pattern": [{"lower": "Data"}, {"lower": "Encoding"}]}
-{"label": "technique_name", "pattern": [{"lower": "DLL"}, {"lower": "Search"}, {"lower": "Order"}, {"lower": "Hijacking"}]}
-{"label": "technique_name", "pattern": [{"lower": "Create"}, {"lower": "Account"}]}
-{"label": "technique_name", "pattern": [{"lower": "Data"}, {"lower": "Transfer"}, {"lower": "Size"}, {"lower": "Limits"}]}
-{"label": "technique_name", "pattern": [{"lower": "Shared"}, {"lower": "Webroot"}]}
-{"label": "technique_name", "pattern": [{"lower": "Component"}, {"lower": "Object"}, {"lower": "Model"}, {"lower": "Hijacking"}]}
-{"label": "technique_name", "pattern": [{"lower": "InstallUtil"}]}
-{"label": "technique_name", "pattern": [{"lower": "System"}, {"lower": "Information"}, {"lower": "Discovery"}]}
-{"label": "technique_name", "pattern": [{"lower": "Authentication"}, {"lower": "Package"}]}
-{"label": "technique_name", "pattern": [{"lower": "Regsvr32"}]}
-{"label": "technique_name", "pattern": [{"lower": "Space"}, {"lower": "after"}, {"lower": "Filename"}]}
-{"label": "technique_name", "pattern": [{"lower": "Change"}, {"lower": "Default"}, {"lower": "File"}, {"lower": "Association"}]}
-{"label": "technique_name", "pattern": [{"lower": "Peripheral"}, {"lower": "Device"}, {"lower": "Discovery"}]}
-{"label": "technique_name", "pattern": [{"lower": "Clipboard"}, {"lower": "Data"}]}
-{"label": "technique_name", "pattern": [{"lower": "Launchctl"}]}
-{"label": "technique_name", "pattern": [{"lower": "Dylib"}, {"lower": "Hijacking"}]}
-{"label": "technique_name", "pattern": [{"lower": "Query"}, {"lower": "Registry"}]}
-{"label": "technique_name", "pattern": [{"lower": "System"}, {"lower": "Owner/User"}, {"lower": "Discovery"}]}
-{"label": "technique_name", "pattern": [{"lower": "Path"}, {"lower": "Interception"}]}
-{"label": "technique_name", "pattern": [{"lower": "Process"}, {"lower": "Discovery"}]}
-{"label": "technique_name", "pattern": [{"lower": "Standard"}, {"lower": "Non-Application"}, {"lower": "Layer"}, {"lower": "Protocol"}]}
-{"label": "technique_name", "pattern": [{"lower": "Multilayer"}, {"lower": "Encryption"}]}
-{"label": "technique_name", "pattern": [{"lower": "Regsvcs/Regasm"}]}
-{"label": "technique_name", "pattern": [{"lower": "Launch"}, {"lower": "Agent"}]}
-{"label": "technique_name", "pattern": [{"lower": "Permission"}, {"lower": "Groups"}, {"lower": "Discovery"}]}
-{"label": "technique_name", "pattern": [{"lower": "HISTCONTROL"}]}
-{"label": "technique_name", "pattern": [{"lower": "Graphical"}, {"lower": "User"}, {"lower": "Interface"}]}
-{"label": "technique_name", "pattern": [{"lower": "Scheduled"}, {"lower": "Task"}]}
-{"label": "technique_name", "pattern": [{"lower": "Windows"}, {"lower": "Management"}, {"lower": "Instrumentation"}]}
-{"label": "technique_name", "pattern": [{"lower": "Process"}, {"lower": "Hollowing"}]}
-{"label": "technique_name", "pattern": [{"lower": "System"}, {"lower": "Network"}, {"lower": "Connections"}, {"lower": "Discovery"}]}
-{"label": "technique_name", "pattern": [{"lower": "Accessibility"}, {"lower": "Features"}]}
-{"label": "technique_name", "pattern": [{"lower": "Modify"}, {"lower": "Existing"}, {"lower": "Service"}]}
-{"label": "technique_name", "pattern": [{"lower": "Data"}, {"lower": "Obfuscation"}]}
-{"label": "technique_name", "pattern": [{"lower": "Automated"}, {"lower": "Collection"}]}
-{"label": "technique_name", "pattern": [{"lower": "Securityd"}, {"lower": "Memory"}]}
-{"label": "technique_name", "pattern": [{"lower": "Private"}, {"lower": "Keys"}]}
-{"label": "technique_name", "pattern": [{"lower": "Deobfuscate/Decode"}, {"lower": "Files"}, {"lower": "or"}, {"lower": "Information"}]}
-{"label": "technique_name", "pattern": [{"lower": "Execution"}, {"lower": "through"}, {"lower": "API"}]}
-{"label": "technique_name", "pattern": [{"lower": "Indicator"}, {"lower": "Removal"}, {"lower": "on"}, {"lower": "Host"}]}
-{"label": "technique_name", "pattern": [{"lower": "Network"}, {"lower": "Share"}, {"lower": "Discovery"}]}
-{"label": "technique_name", "pattern": [{"lower": "Indicator"}, {"lower": "Blocking"}]}
-{"label": "technique_name", "pattern": [{"lower": "Trap"}]}
-{"label": "technique_name", "pattern": [{"lower": "Bypass"}, {"lower": "User"}, {"lower": "Account"}, {"lower": "Control"}]}
-{"label": "technique_name", "pattern": [{"lower": "Taint"}, {"lower": "Shared"}, {"lower": "Content"}]}
-{"label": "technique_name", "pattern": [{"lower": "Keychain"}]}
-{"label": "technique_name", "pattern": [{"lower": "Setuid"}, {"lower": "and"}, {"lower": "Setgid"}]}
-{"label": "technique_name", "pattern": [{"lower": "Redundant"}, {"lower": "Access"}]}
-{"label": "technique_name", "pattern": [{"lower": "Credential"}, {"lower": "Dumping"}]}
-{"label": "technique_name", "pattern": [{"lower": "Bash"}, {"lower": "History"}]}
-{"label": "tactic", "pattern": [{"lower": "Defense"}, {"lower": "Evasion"}]}
-{"label": "tactic", "pattern": [{"lower": "Collection"}]}
-{"label": "tactic", "pattern": [{"lower": "Credential"}, {"lower": "Access"}]}
-{"label": "tactic", "pattern": [{"lower": "Execution"}]}
-{"label": "tactic", "pattern": [{"lower": "Lateral"}, {"lower": "Movement"}]}
-{"label": "tactic", "pattern": [{"lower": "Discovery"}]}
-{"label": "tactic", "pattern": [{"lower": "Command"}, {"lower": "and"}, {"lower": "Control"}]}
-{"label": "tactic", "pattern": [{"lower": "Persistence"}]}
-{"label": "tactic", "pattern": [{"lower": "Exfiltration"}]}
-{"label": "tactic", "pattern": [{"lower": "Privilege"}, {"lower": "Escalation"}]}
+{"label": "technique_name", "pattern": [{"lower": "data"}, {"lower": "encrypted"}]}
+{"label": "technique_name", "pattern": [{"lower": "data"}, {"lower": "from"}, {"lower": "local"}, {"lower": "system"}]}
+{"label": "technique_name", "pattern": [{"lower": "windows"}, {"lower": "admin"}, {"lower": "shares"}]}
+{"label": "technique_name", "pattern": [{"lower": "system"}, {"lower": "firmware"}]}
+{"label": "technique_name", "pattern": [{"lower": "application"}, {"lower": "deployment"}, {"lower": "software"}]}
+{"label": "technique_name", "pattern": [{"lower": "appinit"}, {"lower": "dlls"}]}
+{"label": "technique_name", "pattern": [{"lower": "credentials"}, {"lower": "in"}, {"lower": "files"}]}
+{"label": "technique_name", "pattern": [{"lower": "multiband"}, {"lower": "communication"}]}
+{"label": "technique_name", "pattern": [{"lower": "brute"}, {"lower": "force"}]}
+{"label": "technique_name", "pattern": [{"lower": "scripting"}]}
+{"label": "technique_name", "pattern": [{"lower": "powershell"}]}
+{"label": "technique_name", "pattern": [{"lower": "dll"}, {"lower": "injection"}]}
+{"label": "technique_name", "pattern": [{"lower": "custom"}, {"lower": "command"}, {"lower": "and"}, {"lower": "control"}, {"lower": "protocol"}]}
+{"label": "technique_name", "pattern": [{"lower": "input"}, {"lower": "capture"}]}
+{"label": "technique_name", "pattern": [{"lower": "file"}, {"lower": "system"}, {"lower": "logical"}, {"lower": "offsets"}]}
+{"label": "technique_name", "pattern": [{"lower": "scheduled"}, {"lower": "transfer"}]}
+{"label": "technique_name", "pattern": [{"lower": "exfiltration"}, {"lower": "over"}, {"lower": "physical"}, {"lower": "medium"}]}
+{"label": "technique_name", "pattern": [{"lower": "uncommonly"}, {"lower": "used"}, {"lower": "port"}]}
+{"label": "technique_name", "pattern": [{"lower": "logon"}, {"lower": "scripts"}]}
+{"label": "technique_name", "pattern": [{"lower": "bootkit"}]}
+{"label": "technique_name", "pattern": [{"lower": "startup"}, {"lower": "items"}]}
+{"label": "technique_name", "pattern": [{"lower": "file"}, {"lower": "and"}, {"lower": "directory"}, {"lower": "discovery"}]}
+{"label": "technique_name", "pattern": [{"lower": "exfiltration"}, {"lower": "over"}, {"lower": "alternative"}, {"lower": "protocol"}]}
+{"label": "technique_name", "pattern": [{"lower": "hidden"}, {"lower": "users"}]}
+{"label": "technique_name", "pattern": [{"lower": "remote"}, {"lower": "desktop"}, {"lower": "protocol"}]}
+{"label": "technique_name", "pattern": [{"lower": "plist"}, {"lower": "modification"}]}
+{"label": "technique_name", "pattern": [{"lower": "audio"}, {"lower": "capture"}]}
+{"label": "technique_name", "pattern": [{"lower": "launch"}, {"lower": "daemon"}]}
+{"label": "technique_name", "pattern": [{"lower": "automated"}, {"lower": "exfiltration"}]}
+{"label": "technique_name", "pattern": [{"lower": "command-line"}, {"lower": "interface"}]}
+{"label": "technique_name", "pattern": [{"lower": "external"}, {"lower": "remote"}, {"lower": "services"}]}
+{"label": "technique_name", "pattern": [{"lower": "rundll32"}]}
+{"label": "technique_name", "pattern": [{"lower": "web"}, {"lower": "service"}]}
+{"label": "technique_name", "pattern": [{"lower": "file"}, {"lower": "deletion"}]}
+{"label": "technique_name", "pattern": [{"lower": "dll"}, {"lower": "side-loading"}]}
+{"label": "technique_name", "pattern": [{"lower": "ntfs"}, {"lower": "extended"}, {"lower": "attributes"}]}
+{"label": "technique_name", "pattern": [{"lower": "account"}, {"lower": "discovery"}]}
+{"label": "technique_name", "pattern": [{"lower": "network"}, {"lower": "service"}, {"lower": "scanning"}]}
+{"label": "technique_name", "pattern": [{"lower": "gatekeeper"}, {"lower": "bypass"}]}
+{"label": "technique_name", "pattern": [{"lower": "remote"}, {"lower": "services"}]}
+{"label": "technique_name", "pattern": [{"lower": "hidden"}, {"lower": "window"}]}
+{"label": "technique_name", "pattern": [{"lower": "source"}]}
+{"label": "technique_name", "pattern": [{"lower": "replication"}, {"lower": "through"}, {"lower": "removable"}, {"lower": "media"}]}
+{"label": "technique_name", "pattern": [{"lower": "hidden"}, {"lower": "files"}, {"lower": "and"}, {"lower": "directories"}]}
+{"label": "technique_name", "pattern": [{"lower": "trusted"}, {"lower": "developer"}, {"lower": "utilities"}]}
+{"label": "technique_name", "pattern": [{"lower": "email"}, {"lower": "collection"}]}
+{"label": "technique_name", "pattern": [{"lower": "exploitation"}, {"lower": "of"}, {"lower": "vulnerability"}]}
+{"label": "technique_name", "pattern": [{"lower": "two-factor"}, {"lower": "authentication"}, {"lower": "interception"}]}
+{"label": "technique_name", "pattern": [{"lower": "valid"}, {"lower": "accounts"}]}
+{"label": "technique_name", "pattern": [{"lower": "timestomp"}]}
+{"label": "technique_name", "pattern": [{"lower": "data"}, {"lower": "staged"}]}
+{"label": "technique_name", "pattern": [{"lower": "system"}, {"lower": "service"}, {"lower": "discovery"}]}
+{"label": "technique_name", "pattern": [{"lower": "standard"}, {"lower": "cryptographic"}, {"lower": "protocol"}]}
+{"label": "technique_name", "pattern": [{"lower": "new"}, {"lower": "service"}]}
+{"label": "technique_name", "pattern": [{"lower": "disabling"}, {"lower": "security"}, {"lower": "tools"}]}
+{"label": "technique_name", "pattern": [{"lower": "rootkit"}]}
+{"label": "technique_name", "pattern": [{"lower": "custom"}, {"lower": "cryptographic"}, {"lower": "protocol"}]}
+{"label": "technique_name", "pattern": [{"lower": "exfiltration"}, {"lower": "over"}, {"lower": "command"}, {"lower": "and"}, {"lower": "control"}, {"lower": "channel"}]}
+{"label": "technique_name", "pattern": [{"lower": "lc_main"}, {"lower": "hijacking"}]}
+{"label": "technique_name", "pattern": [{"lower": "application"}, {"lower": "window"}, {"lower": "discovery"}]}
+{"label": "technique_name", "pattern": [{"lower": "install"}, {"lower": "root"}, {"lower": "certificate"}]}
+{"label": "technique_name", "pattern": [{"lower": "applescript"}]}
+{"label": "technique_name", "pattern": [{"lower": "winlogon"}, {"lower": "helper"}, {"lower": "dll"}]}
+{"label": "technique_name", "pattern": [{"lower": "exfiltration"}, {"lower": "over"}, {"lower": "other"}, {"lower": "network"}, {"lower": "medium"}]}
+{"label": "technique_name", "pattern": [{"lower": "indicator"}, {"lower": "removal"}, {"lower": "from"}, {"lower": "tools"}]}
+{"label": "technique_name", "pattern": [{"lower": "lc_load_dylib"}, {"lower": "addition"}]}
+{"label": "technique_name", "pattern": [{"lower": "data"}, {"lower": "from"}, {"lower": "removable"}, {"lower": "media"}]}
+{"label": "technique_name", "pattern": [{"lower": "service"}, {"lower": "execution"}]}
+{"label": "technique_name", "pattern": [{"lower": "modify"}, {"lower": "registry"}]}
+{"label": "technique_name", "pattern": [{"lower": "account"}, {"lower": "manipulation"}]}
+{"label": "technique_name", "pattern": [{"lower": "communication"}, {"lower": "through"}, {"lower": "removable"}, {"lower": "media"}]}
+{"label": "technique_name", "pattern": [{"lower": "security"}, {"lower": "software"}, {"lower": "discovery"}]}
+{"label": "technique_name", "pattern": [{"lower": "binary"}, {"lower": "padding"}]}
+{"label": "technique_name", "pattern": [{"lower": "data"}, {"lower": "compressed"}]}
+{"label": "technique_name", "pattern": [{"lower": "windows"}, {"lower": "remote"}, {"lower": "management"}]}
+{"label": "technique_name", "pattern": [{"lower": "software"}, {"lower": "packing"}]}
+{"label": "technique_name", "pattern": [{"lower": "multi-stage"}, {"lower": "channels"}]}
+{"label": "technique_name", "pattern": [{"lower": "local"}, {"lower": "port"}, {"lower": "monitor"}]}
+{"label": "technique_name", "pattern": [{"lower": "data"}, {"lower": "encoding"}]}
+{"label": "technique_name", "pattern": [{"lower": "dll"}, {"lower": "search"}, {"lower": "order"}, {"lower": "hijacking"}]}
+{"label": "technique_name", "pattern": [{"lower": "create"}, {"lower": "account"}]}
+{"label": "technique_name", "pattern": [{"lower": "data"}, {"lower": "transfer"}, {"lower": "size"}, {"lower": "limits"}]}
+{"label": "technique_name", "pattern": [{"lower": "shared"}, {"lower": "webroot"}]}
+{"label": "technique_name", "pattern": [{"lower": "component"}, {"lower": "object"}, {"lower": "model"}, {"lower": "hijacking"}]}
+{"label": "technique_name", "pattern": [{"lower": "installutil"}]}
+{"label": "technique_name", "pattern": [{"lower": "system"}, {"lower": "information"}, {"lower": "discovery"}]}
+{"label": "technique_name", "pattern": [{"lower": "authentication"}, {"lower": "package"}]}
+{"label": "technique_name", "pattern": [{"lower": "regsvr32"}]}
+{"label": "technique_name", "pattern": [{"lower": "space"}, {"lower": "after"}, {"lower": "filename"}]}
+{"label": "technique_name", "pattern": [{"lower": "change"}, {"lower": "default"}, {"lower": "file"}, {"lower": "association"}]}
+{"label": "technique_name", "pattern": [{"lower": "peripheral"}, {"lower": "device"}, {"lower": "discovery"}]}
+{"label": "technique_name", "pattern": [{"lower": "clipboard"}, {"lower": "data"}]}
+{"label": "technique_name", "pattern": [{"lower": "launchctl"}]}
+{"label": "technique_name", "pattern": [{"lower": "dylib"}, {"lower": "hijacking"}]}
+{"label": "technique_name", "pattern": [{"lower": "query"}, {"lower": "registry"}]}
+{"label": "technique_name", "pattern": [{"lower": "system"}, {"lower": "owner/user"}, {"lower": "discovery"}]}
+{"label": "technique_name", "pattern": [{"lower": "path"}, {"lower": "interception"}]}
+{"label": "technique_name", "pattern": [{"lower": "process"}, {"lower": "discovery"}]}
+{"label": "technique_name", "pattern": [{"lower": "standard"}, {"lower": "non-application"}, {"lower": "layer"}, {"lower": "protocol"}]}
+{"label": "technique_name", "pattern": [{"lower": "multilayer"}, {"lower": "encryption"}]}
+{"label": "technique_name", "pattern": [{"lower": "regsvcs/regasm"}]}
+{"label": "technique_name", "pattern": [{"lower": "launch"}, {"lower": "agent"}]}
+{"label": "technique_name", "pattern": [{"lower": "permission"}, {"lower": "groups"}, {"lower": "discovery"}]}
+{"label": "technique_name", "pattern": [{"lower": "histcontrol"}]}
+{"label": "technique_name", "pattern": [{"lower": "graphical"}, {"lower": "user"}, {"lower": "interface"}]}
+{"label": "technique_name", "pattern": [{"lower": "scheduled"}, {"lower": "task"}]}
+{"label": "technique_name", "pattern": [{"lower": "windows"}, {"lower": "management"}, {"lower": "instrumentation"}]}
+{"label": "technique_name", "pattern": [{"lower": "process"}, {"lower": "hollowing"}]}
+{"label": "technique_name", "pattern": [{"lower": "system"}, {"lower": "network"}, {"lower": "connections"}, {"lower": "discovery"}]}
+{"label": "technique_name", "pattern": [{"lower": "accessibility"}, {"lower": "features"}]}
+{"label": "technique_name", "pattern": [{"lower": "modify"}, {"lower": "existing"}, {"lower": "service"}]}
+{"label": "technique_name", "pattern": [{"lower": "data"}, {"lower": "obfuscation"}]}
+{"label": "technique_name", "pattern": [{"lower": "automated"}, {"lower": "collection"}]}
+{"label": "technique_name", "pattern": [{"lower": "securityd"}, {"lower": "memory"}]}
+{"label": "technique_name", "pattern": [{"lower": "private"}, {"lower": "keys"}]}
+{"label": "technique_name", "pattern": [{"lower": "deobfuscate/decode"}, {"lower": "files"}, {"lower": "or"}, {"lower": "information"}]}
+{"label": "technique_name", "pattern": [{"lower": "execution"}, {"lower": "through"}, {"lower": "api"}]}
+{"label": "technique_name", "pattern": [{"lower": "indicator"}, {"lower": "removal"}, {"lower": "on"}, {"lower": "host"}]}
+{"label": "technique_name", "pattern": [{"lower": "network"}, {"lower": "share"}, {"lower": "discovery"}]}
+{"label": "technique_name", "pattern": [{"lower": "indicator"}, {"lower": "blocking"}]}
+{"label": "technique_name", "pattern": [{"lower": "trap"}]}
+{"label": "technique_name", "pattern": [{"lower": "bypass"}, {"lower": "user"}, {"lower": "account"}, {"lower": "control"}]}
+{"label": "technique_name", "pattern": [{"lower": "taint"}, {"lower": "shared"}, {"lower": "content"}]}
+{"label": "technique_name", "pattern": [{"lower": "keychain"}]}
+{"label": "technique_name", "pattern": [{"lower": "setuid"}, {"lower": "and"}, {"lower": "setgid"}]}
+{"label": "technique_name", "pattern": [{"lower": "redundant"}, {"lower": "access"}]}
+{"label": "technique_name", "pattern": [{"lower": "credential"}, {"lower": "dumping"}]}
+{"label": "technique_name", "pattern": [{"lower": "bash"}, {"lower": "history"}]}
+{"label": "tactic", "pattern": [{"lower": "defense"}, {"lower": "evasion"}]}
+{"label": "tactic", "pattern": [{"lower": "collection"}]}
+{"label": "tactic", "pattern": [{"lower": "credential"}, {"lower": "access"}]}
+{"label": "tactic", "pattern": [{"lower": "execution"}]}
+{"label": "tactic", "pattern": [{"lower": "lateral"}, {"lower": "movement"}]}
+{"label": "tactic", "pattern": [{"lower": "discovery"}]}
+{"label": "tactic", "pattern": [{"lower": "command"}, {"lower": "and"}, {"lower": "control"}]}
+{"label": "tactic", "pattern": [{"lower": "persistence"}]}
+{"label": "tactic", "pattern": [{"lower": "exfiltration"}]}
+{"label": "tactic", "pattern": [{"lower": "privilege"}, {"lower": "escalation"}]}
