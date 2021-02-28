@@ -38,6 +38,6 @@ with open("APT_CyberCriminal_Campagin_Collections_annotated.jsonl", "w") as fw:
                 spans.append(span_dict)
                 # print(span_dict)
             line_json["spans"] = spans
-            fw.write(json.dumps(line_json))
+            fw.write(json.dumps(line_json) + "\n")
 
 
