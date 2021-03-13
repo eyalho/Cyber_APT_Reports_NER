@@ -64,8 +64,9 @@ class APTCyberCollection(object):
         return True
 
 
-INPUT_DATA = "/home/eyal/Documents/master/2021A/NLP/cyber/txt_files/APT_CyberCriminal_Campagin_Collections"
-OUTPUT_FILE = "./APT_CyberCriminal_Campagin_Collections.jsonl"
-stream = APTCyberCollection(INPUT_DATA)
-srsly.write_jsonl(OUTPUT_FILE, stream)
-print(f"created {OUTPUT_FILE} (out of {INPUT_DATA} dir)")
+if __name__ == "__main__":
+    INPUT_DATA = "/home/eyal/Documents/master/2021A/NLP/cyber/txt_files/APT_CyberCriminal_Campagin_Collections"
+    OUTPUT_FILE = "./APT_CyberCriminal_Campagin_Collections.jsonl"
+    stream = APTCyberCollection(INPUT_DATA)
+    srsly.write_jsonl(OUTPUT_FILE, stream)
+    print(f"created {OUTPUT_FILE} (out of {INPUT_DATA} dir)")
