@@ -13,6 +13,7 @@ SOURCE_PDF_DIR = DATASET_DIR / "sources_pdf"
 DST_TXT_DIR = DATASET_DIR / "converted_to_txt"
 DST_JSONL_DIR = DATASET_DIR / "converted_to_jsnol"
 DST_ANNO_JSONL_DIR = DATASET_DIR / "converted_to_anno_jsnol"
+DST_EXPERIMENT_ANNO_JSONL_DIR = DATASET_DIR / "experiment_anno_jsnol"
 
 GIT_1_SOURCE_DIR = SOURCE_PDF_DIR / "APT_CyberCriminal_Campagin_Collections"
 GIT_1_TXT_DIR = DST_TXT_DIR / "APT_CyberCriminal_Campagin_Collections"
