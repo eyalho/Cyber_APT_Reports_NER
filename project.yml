@@ -84,10 +84,10 @@ commands:
     outputs_no_cache:
       - "packages/en_${vars.name}-${vars.version}/dist/en_${vars.name}-${vars.version}.tar.gz"
 
-  - name: visualize-model
-    help: Visualize the model's output interactively using Streamlit
+  - name: "visualize-model"
+    help: "Visualize the model's output interactively using Streamlit"
     script:
-      - "streamlit run scripts/visualize_model.py training/model-best \"I like Adidas shoes.\""
+      - "streamlit run scripts/visualize_model.py training/model-best \"machines, but also against macOS and Linux machines with various backdoors and a rootkit.\""
     deps:
       - "scripts/visualize_model.py"
       - "training/model-best"
