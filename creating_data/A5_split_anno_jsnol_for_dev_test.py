@@ -63,8 +63,12 @@ def split_jsonl_dataset_by_year(max_year_for_train, annotated_jsonl_datafile, tr
     train_df = index_df[index_df.year <= max_year_for_train]
     test_df = index_df[index_df.year > max_year_for_train]
 
-    train_df.to_csv(Path(train_jsonl_path).parent / "train_df.csv")
-    test_df.to_csv(Path(train_jsonl_path).parent / "test_df.csv")
+    # save experiment index into csv-zip
+    train_df.to_csv(Path(train_jsonl_path).parent / "train_df.csv.zip",
+                    compression=dict(method="zip", archive_name=f"train_df.csv"))
+    test_df.to_csv(Path(train_jsonl_path).parent / "test_df.csv.zip",
+                   compression=dict(method="zip", archive_name=f"test_df.csv"))
+
     print(f"train years {sorted(list(train_df.year.unique()))}")
     print(f"test years {sorted(list(test_df.year.unique()))}")
     with open(train_jsonl_path, "w") as f_train:
@@ -80,7 +84,7 @@ def split_jsonl_dataset_by_year(max_year_for_train, annotated_jsonl_datafile, tr
 
 
 if __name__ == "__main__":
-    index_jsonl_by_meta_and_spans(GIT_1_ANNO_JSONL_PATH)
+    # index_jsonl_by_meta_and_spans(GIT_1_ANNO_JSONL_PATH)
     train_jsonl_path = DST_EXPERIMENT_ANNO_JSONL_DIR / "exp1" / "train_until_2016.jsonl"
     test_jsonl_path = DST_EXPERIMENT_ANNO_JSONL_DIR / "exp1" / "test_from_2017.jsonl"
     train_jsonl_path.parent.mkdir(exist_ok=True, parents=True)
