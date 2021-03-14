@@ -3,15 +3,17 @@ from pathlib import Path
 
 import srsly
 
+from creating_data.config import GIT_1_TXT_DIR, GIT_1_JSONL_PATH
 
-class APTCyberCollection(object):
-    """Stream cleaned lines from APTCyberCollection."""
+
+class StreamAPTCyberCriminalCampaginCollections(object):
+    """Stream cleaned lines from StreamAPTCyberCriminalCampaginCollections."""
 
     def __init__(
             self, file_path):
         """
         file_path (unicode / Path): Path to archive or directory of archives.
-        RETURNS (APTCyberCollection): The loader.
+        RETURNS (StreamAPTCyberCriminalCampaginCollections): The loader.
         """
         self.file_path = Path(file_path)
         if not self.file_path.exists():
@@ -41,7 +43,7 @@ class APTCyberCollection(object):
             assert int(year) < 2100
             assert int(year) > 1900
         except Exception as e:
-            print(f"No year found: skip {file_path}")
+            print(f"No year found: skip {file_path}\n --> Error: {e}")
             return False
         return True
 
@@ -65,8 +67,7 @@ class APTCyberCollection(object):
 
 
 if __name__ == "__main__":
-    INPUT_DATA = "/home/eyal/Documents/master/2021A/NLP/cyber/txt_files/APT_CyberCriminal_Campagin_Collections"
-    OUTPUT_FILE = "./APT_CyberCriminal_Campagin_Collections.jsonl"
-    stream = APTCyberCollection(INPUT_DATA)
-    srsly.write_jsonl(OUTPUT_FILE, stream)
-    print(f"created {OUTPUT_FILE} (out of {INPUT_DATA} dir)")
+    GIT_1_JSONL_PATH.parent.mkdir(exist_ok=True, parents=True)
+    stream = StreamAPTCyberCriminalCampaginCollections(GIT_1_TXT_DIR)
+    srsly.write_jsonl(GIT_1_JSONL_PATH, stream)
+    print(f"created {GIT_1_JSONL_PATH} (out of {GIT_1_TXT_DIR} dir)")
