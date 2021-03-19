@@ -5,7 +5,7 @@ from pathlib import Path
 import pandas as pd
 import srsly
 
-from creating_data.config import GIT_1_ANNO_JSONL_PATH, MITRE_LABELS_JSON_PATH, DST_EXPERIMENT_ANNO_JSONL_DIR
+from config import GIT_1_ANNO_JSONL_PATH, MITRE_LABELS_JSON_PATH, DST_EXPERIMENT_ANNO_JSONL_DIR
 
 DF_INDEX_CSV_FILE_PATH = Path("index.csv")
 DF_INDEX_ZIP_FILE_PATH = Path("index.zip")
@@ -83,11 +83,38 @@ def split_jsonl_dataset_by_year(max_year_for_train, annotated_jsonl_datafile, tr
                         raise ValueError(f"idx({idx}) not in train and not in test")
 
 
+def _save_zip_of_df(df, dir_path, file_name):
+    dst_zip_path = Path(dir_path) / Path(file_name).with_suffix(".csv.zip")
+    dst_archive_name = Path(file_name).with_suffix(".csv")
+    print(f"save {dst_zip_path} ({dst_archive_name})")
+    df.to_csv(dst_zip_path,
+              compression=dict(method="zip", archive_name=str(dst_archive_name)))
+
+
+def filter_to_sentences_contain_group_name(annotated_jsonl_datafile, contain_group_name_annotated_jsonl_datafile):
+    index_df = pd.read_csv(DF_INDEX_CSV_FILE_PATH)
+    only_contain_group_name_df = index_df[index_df["group_name"] != str([])]
+    print(f"Found {only_contain_group_name_df.shape[0]} lines with group_names")
+    _save_zip_of_df(only_contain_group_name_df, Path(contain_group_name_annotated_jsonl_datafile).parent,
+                    "only_contain_group_name_df")
+    with open(contain_group_name_annotated_jsonl_datafile, "w") as fw:
+        with open(annotated_jsonl_datafile, "r") as fr:
+            for idx, line in enumerate(fr):
+                if idx in only_contain_group_name_df.index:
+                    fw.write(line)
+
+
 if __name__ == "__main__":
     # index_jsonl_by_meta_and_spans(GIT_1_ANNO_JSONL_PATH)
-    train_jsonl_path = DST_EXPERIMENT_ANNO_JSONL_DIR / "exp1" / "train_until_2016.jsonl"
-    test_jsonl_path = DST_EXPERIMENT_ANNO_JSONL_DIR / "exp1" / "test_from_2017.jsonl"
-    train_jsonl_path.parent.mkdir(exist_ok=True, parents=True)
-    test_jsonl_path.parent.mkdir(exist_ok=True, parents=True)
 
-    split_jsonl_dataset_by_year(2016, GIT_1_ANNO_JSONL_PATH, train_jsonl_path, test_jsonl_path)
+    # exp1 - all labels, all data split by years
+    # train_jsonl_path = DST_EXPERIMENT_ANNO_JSONL_DIR / "exp1" / "train_until_2016.jsonl"
+    # test_jsonl_path = DST_EXPERIMENT_ANNO_JSONL_DIR / "exp1" / "test_from_2017.jsonl"
+    # train_jsonl_path.parent.mkdir(exist_ok=True, parents=True)
+    # test_jsonl_path.parent.mkdir(exist_ok=True, parents=True)
+    # split_jsonl_dataset_by_year(2016, GIT_1_ANNO_JSONL_PATH, train_jsonl_path, test_jsonl_path)
+
+    # create smaller dev dataset with only lines contained some group_name
+    contain_group_name_annotated_jsonl_datafile = DST_EXPERIMENT_ANNO_JSONL_DIR / "only_contain_group_name" / "only_contain_group_name.jsonl"
+    contain_group_name_annotated_jsonl_datafile.parent.mkdir(exist_ok=True, parents=True)
+    filter_to_sentences_contain_group_name(GIT_1_ANNO_JSONL_PATH, contain_group_name_annotated_jsonl_datafile)
