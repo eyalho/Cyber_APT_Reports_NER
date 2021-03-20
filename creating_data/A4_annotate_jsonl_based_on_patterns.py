@@ -6,7 +6,7 @@ from spacy.matcher import Matcher
 from spacy.tokens import Span
 from spacy.util import filter_spans
 
-from creating_data.config import PATTERNS_FILE_PATH, GIT_1_JSONL_PATH, GIT_1_ANNO_JSONL_PATH
+from config import PATTERNS_FILE_PATH, GIT_1_JSONL_PATH, GIT_1_ANNO_JSONL_PATH
 
 
 def _spans_to_spans_dicts_list(spans):

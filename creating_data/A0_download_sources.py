@@ -1,6 +1,6 @@
 import os
 
-from creating_data.config import GIT_URL_1, SOURCE_PDF_DIR
+from config import GIT_URL_1, SOURCE_PDF_DIR
 
 
 def download_repo(github_url, dst_dir):

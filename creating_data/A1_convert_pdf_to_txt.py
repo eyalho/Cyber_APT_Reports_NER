@@ -2,7 +2,7 @@ from pathlib import Path
 
 import pdftotext
 
-from creating_data.config import GIT_1_SOURCE_DIR, GIT_1_TXT_DIR
+from config import GIT_1_SOURCE_DIR, GIT_1_TXT_DIR
 
 
 def pdftotext_converter(source_pdf_dir, dst_txt_dir):

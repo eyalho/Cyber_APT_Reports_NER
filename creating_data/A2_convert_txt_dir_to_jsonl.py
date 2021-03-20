@@ -3,7 +3,7 @@ from pathlib import Path
 
 import srsly
 
-from creating_data.config import GIT_1_TXT_DIR, GIT_1_JSONL_PATH
+from config import GIT_1_TXT_DIR, GIT_1_JSONL_PATH
 
 
 class StreamAPTCyberCriminalCampaginCollections(object):

@@ -1,7 +1,7 @@
 import json
 from pathlib import Path
 
-from creating_data.config import MITRE_LABELS_JSON_PATH, PATTERNS_FILE_PATH
+from config import MITRE_LABELS_JSON_PATH, PATTERNS_FILE_PATH
 
 
 def create_patterns_file(mitre_labels_json_path, pattern_file_dst_path):
