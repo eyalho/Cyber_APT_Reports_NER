@@ -1,7 +1,7 @@
 from pathlib import Path
 
-PATTERNS_FILE_PATH = Path("creating_data/patterns.jsonl")
-MITRE_LABELS_JSON_PATH = Path("creating_data/MITRE_labels.json")
+PATTERNS_FILE_PATH = Path("patterns.jsonl")
+MITRE_LABELS_JSON_PATH = Path("MITRE_labels.json")
 
 GIT_URL_1 = "https://github.com/CyberMonitor/APT_CyberCriminal_Campagin_Collections"
 GIT_URL_2 = "https://github.com/blackorbird/APT_REPORT"
