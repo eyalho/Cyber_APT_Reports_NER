@@ -8,6 +8,7 @@ vars:
   version: "0.0.1"
   train: "cyber_attrs_training"
   dev: "cyber_attrs_eval"
+  origin_labels_json: "creating_data/MITRE_labels.json"
 #  patterns: "cyber_attrs_patterns"
 
 # These are the directories that the project needs. The project CLI will make
@@ -29,6 +30,7 @@ workflows:
     - train
     - evaluate
     - create-jsnol-anno-by-model
+    - index-jsnol-into-df
 
 # via "spacy project run [command] [path]".
 # shown when executing "spacy project run [optional command] [path] --help".
@@ -105,3 +107,23 @@ commands:
     outputs:
       - "assets/${vars.train}_by_model.jsonl"
       - "assets/${vars.train}_by_model.jsonl"
+
+  - name: "index-jsnol-into-df"
+    help: "Index the jsnol files by simple dataframes and deserialized into zipped csv"
+    script:
+      - "python scripts/index_jsonl_into_df.py ${vars.origin_labels_json} assets/${vars.train}.jsonl assets/${vars.train}_df.zip"
+      - "python scripts/index_jsonl_into_df.py ${vars.origin_labels_json} assets/${vars.train}_by_model.jsonl assets/${vars.train}_by_model_df.zip"
+      - "python scripts/index_jsonl_into_df.py ${vars.origin_labels_json} assets/${vars.dev}.jsonl assets/${vars.dev}_df.zip"
+      - "python scripts/index_jsonl_into_df.py ${vars.origin_labels_json} assets/${vars.dev}_by_model.jsonl assets/${vars.dev}_by_model_df.zip"
+    deps:
+      - "scripts/index_jsonl_into_df.py"
+      - "${vars.origin_labels_json}"
+      - "assets/${vars.train}.jsonl"
+      - "assets/${vars.train}_by_model.jsonl"
+      - "assets/${vars.dev}.jsonl"
+      - "assets/${vars.dev}_by_model.jsonl"
+    outputs:
+      - "assets/${vars.train}.jsonl"
+      - "assets/${vars.train}_by_model.jsonl"
+      - "assets/${vars.dev}.jsonl"
+      - "assets/${vars.dev}_by_model.jsonl"
