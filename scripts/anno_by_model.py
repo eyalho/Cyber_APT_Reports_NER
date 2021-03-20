@@ -24,33 +24,30 @@ def _spans_to_spans_dicts_list(spans):
     return spans_dicts_list
 
 
-def main(model: str, file_paths: str):
-    files = [p.strip() for p in file_paths.split(",")]
+def main(model: str, origin_jsonl_path: str, label_by_model_jsonl_path: str):
     nlp = spacy.load(model)
-    for origin_jsonl_path in files:
-        origin_jsonl_path = Path(origin_jsonl_path)
-        label_by_model_jsonl_path = origin_jsonl_path.parent \
-                                    / f"{origin_jsonl_path.stem}_by_model{origin_jsonl_path.suffix}"
-        print(f"annotate with {model}:\n{origin_jsonl_path}->{label_by_model_jsonl_path}")
-        with open(label_by_model_jsonl_path, "w") as fw:
-            with open(origin_jsonl_path, "r") as fr:
-                for count_lines, _ in enumerate(tqdm(fr)):
-                    pass
-            with open(origin_jsonl_path, "r") as fr:
-                for idx, line in enumerate(tqdm(fr, total=count_lines + 1)):
-                    line_json = srsly.json_loads(line)
-                    line_json["spans"] = list()  # delete any existing spans (labels)
-                    line_nlp = nlp(line_json["text"])
-                    spans = []
-                    for ent in line_nlp.ents:
-                        span = Span(line_nlp, ent.start, ent.end, label=ent.label_)
-                        spans.append(span)
-                    spans = filter_spans(spans)  # useless line, NER model should not output problematic spans
-                    # if spans:
-                    #     print(f"{idx}, spans({len(spans)}):{spans}")
-                    spans_dicts_list = _spans_to_spans_dicts_list(spans)
-                    line_json["spans"] = spans_dicts_list
-                    fw.write(json.dumps(line_json) + "\n")
+    origin_jsonl_path = Path(origin_jsonl_path)
+    label_by_model_jsonl_path = Path(label_by_model_jsonl_path)
+    print(f"annotate with {model}:\n{origin_jsonl_path}->{label_by_model_jsonl_path}")
+    with open(label_by_model_jsonl_path, "w") as fw:
+        with open(origin_jsonl_path, "r") as fr:
+            for count_lines, _ in enumerate(tqdm(fr)):
+                pass
+        with open(origin_jsonl_path, "r") as fr:
+            for idx, line in enumerate(tqdm(fr, total=count_lines + 1)):
+                line_json = srsly.json_loads(line)
+                line_json["spans"] = list()  # delete any existing spans (labels)
+                line_nlp = nlp(line_json["text"])
+                spans = []
+                for ent in line_nlp.ents:
+                    span = Span(line_nlp, ent.start, ent.end, label=ent.label_)
+                    spans.append(span)
+                spans = filter_spans(spans)  # useless line, NER model should not output problematic spans
+                # if spans:
+                #     print(f"{idx}, spans({len(spans)}):{spans}")
+                spans_dicts_list = _spans_to_spans_dicts_list(spans)
+                line_json["spans"] = spans_dicts_list
+                fw.write(json.dumps(line_json) + "\n")
 
 
 if __name__ == "__main__":

@@ -28,6 +28,7 @@ workflows:
     - preprocess
     - train
     - evaluate
+    - create-jsnol-anno-by-model
 
 # via "spacy project run [command] [path]".
 # shown when executing "spacy project run [optional command] [path] --help".
@@ -95,8 +96,12 @@ commands:
   - name: "create-jsnol-anno-by-model"
     help: "Use the trained model and re-label the jsnol based on it prediction"
     script:
-      - "python scripts/anno_by_model.py training/model-best assets/${vars.train}.jsonl,assets/${vars.dev}.jsonl"
+      - "python scripts/anno_by_model.py training/model-best assets/${vars.train}.jsonl assets/${vars.train}_by_model.jsonl"
+      - "python scripts/anno_by_model.py training/model-best assets/${vars.dev}.jsonl assets/${vars.dev}_by_model.jsonl"
     deps:
-      - "scripts/visualize_data.py"
+      - "scripts/anno_by_model.py"
       - "assets/${vars.train}.jsonl"
       - "assets/${vars.dev}.jsonl"
+    outputs:
+      - "assets/${vars.train}_by_model.jsonl"
+      - "assets/${vars.train}_by_model.jsonl"
