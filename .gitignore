@@ -130,3 +130,13 @@ dmypy.json
 
 # pycharm
 .idea/
+
+prodigy_projects/
+dummy_data/
+jsnol_data/
+tmp/
+training/
+assets/
+corpus/
+packages/
+project.lock

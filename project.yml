@@ -1,0 +1,129 @@
+title: "Detecting cyber related names based on APT reports (Named Entity Recognition)"
+description: "This project uses [`sense2vec`](https://github.com/explosion/sense2vec) and [Prodigy](https://prodi.gy) to bootstrap an NER model to detect fashion brands in [APTCyberCollection comments](https://files.pushshift.io/reddit/comments/). For more details, see [our blog post](https://explosion.ai/blog/sense2vec-reloaded#annotation)."
+
+# Variables can be referenced across the project.yml using ${vars.var_name}
+vars:
+  config: "config.cfg"
+  name: "ner_cyber_attrs"
+  version: "0.0.1"
+  train: "cyber_attrs_training"
+  dev: "cyber_attrs_eval"
+  origin_labels_json: "creating_data/MITRE_labels.json"
+#  patterns: "cyber_attrs_patterns"
+
+# These are the directories that the project needs. The project CLI will make
+# sure that they always exist.
+directories: [ "assets", "training", "configs", "scripts", "corpus", "packages" ]
+
+# Assets that should be downloaded or available in the directory. We're shipping
+# them with the project, so they won't have to be downloaded. But the
+# 'project assets' command still lets you verify that the checksums match.
+assets:
+  - dest: "assets/${vars.train}.jsonl"
+  - dest: "assets/${vars.dev}.jsonl"
+
+# Run via "spacy project run all".
+# If a commands's inputs/outputs haven't changed, it won't be re-run (based on project.lock)
+workflows:
+  all:
+    - preprocess
+    - train
+    - evaluate
+    - create-jsnol-anno-by-model
+    - index-jsnol-into-df
+
+# via "spacy project run [command] [path]".
+# shown when executing "spacy project run [optional command] [path] --help".
+commands:
+  - name: "preprocess"
+    help: "Convert the data to spaCy's binary format"
+    script:
+      - "python scripts/preprocess.py assets/${vars.train}.jsonl corpus/${vars.train}.spacy"
+      - "python scripts/preprocess.py assets/${vars.dev}.jsonl corpus/${vars.dev}.spacy"
+    deps:
+      - "assets/${vars.train}.jsonl"
+      - "assets/${vars.dev}.jsonl"
+      - "scripts/preprocess.py"
+    outputs:
+      - "corpus/${vars.train}.spacy"
+      - "corpus/${vars.dev}.spacy"
+
+  - name: "train"
+    help: "Train a named entity recognition model"
+    script:
+      - "python -m spacy train configs/${vars.config} --output training/ --paths.train corpus/${vars.train}.spacy --paths.dev corpus/${vars.dev}.spacy"
+    deps:
+      - "corpus/${vars.train}.spacy"
+      - "corpus/${vars.dev}.spacy"
+    outputs:
+      - "training/model-best"
+
+  - name: "evaluate"
+    help: "Evaluate the model and export metrics"
+    script:
+      - "python -m spacy evaluate training/model-best corpus/${vars.dev}.spacy --output training/metrics.json"
+    deps:
+      - "corpus/${vars.dev}.spacy"
+      - "training/model-best"
+    outputs:
+      - "training/metrics.json"
+
+  - name: "package"
+    help: "Package the trained model so it can be installed"
+    script:
+      - "python -m spacy package training/model-best packages --name ${vars.name} --version ${vars.version} --force"
+    deps:
+      - "training/model-best"
+    outputs_no_cache:
+      - "packages/en_${vars.name}-${vars.version}/dist/en_${vars.name}-${vars.version}.tar.gz"
+
+  - name: "visualize-model"
+    help: "Visualize the model's output interactively using Streamlit"
+    script:
+      - "streamlit run scripts/visualize_model.py training/model-best \"machines, but also against macOS and Linux machines with various backdoors and a rootkit.\""
+    deps:
+      - "scripts/visualize_model.py"
+      - "training/model-best"
+
+  - name: "visualize-data"
+    help: "Explore the annotated data in an interactive Streamlit app"
+    script:
+      - "streamlit run scripts/visualize_data.py assets/${vars.train}.jsonl,assets/${vars.dev}.jsonl"
+    deps:
+      - "scripts/visualize_data.py"
+      - "assets/${vars.train}.jsonl"
+      - "assets/${vars.dev}.jsonl"
+
+
+  - name: "create-jsnol-anno-by-model"
+    help: "Use the trained model and re-label the jsnol based on it prediction"
+    script:
+      - "python scripts/anno_by_model.py training/model-best assets/${vars.train}.jsonl assets/${vars.train}_by_model.jsonl"
+      - "python scripts/anno_by_model.py training/model-best assets/${vars.dev}.jsonl assets/${vars.dev}_by_model.jsonl"
+    deps:
+      - "scripts/anno_by_model.py"
+      - "assets/${vars.train}.jsonl"
+      - "assets/${vars.dev}.jsonl"
+    outputs:
+      - "assets/${vars.train}_by_model.jsonl"
+      - "assets/${vars.train}_by_model.jsonl"
+
+  - name: "index-jsnol-into-df"
+    help: "Index the jsnol files by simple dataframes and deserialized into zipped csv"
+    script:
+      - "python scripts/index_jsonl_into_df.py ${vars.origin_labels_json} assets/${vars.train}.jsonl assets/${vars.train}_df.zip"
+      - "python scripts/index_jsonl_into_df.py ${vars.origin_labels_json} assets/${vars.train}_by_model.jsonl assets/${vars.train}_by_model_df.zip"
+      - "python scripts/index_jsonl_into_df.py ${vars.origin_labels_json} assets/${vars.dev}.jsonl assets/${vars.dev}_df.zip"
+      - "python scripts/index_jsonl_into_df.py ${vars.origin_labels_json} assets/${vars.dev}_by_model.jsonl assets/${vars.dev}_by_model_df.zip"
+    deps:
+      - "scripts/index_jsonl_into_df.py"
+      - "${vars.origin_labels_json}"
+      - "assets/${vars.train}.jsonl"
+      - "assets/${vars.train}_by_model.jsonl"
+      - "assets/${vars.dev}.jsonl"
+      - "assets/${vars.dev}_by_model.jsonl"
+    outputs:
+      - "assets/${vars.train}.jsonl"
+      - "assets/${vars.train}_by_model.jsonl"
+      - "assets/${vars.dev}.jsonl"
+      - "assets/${vars.dev}_by_model.jsonl"
