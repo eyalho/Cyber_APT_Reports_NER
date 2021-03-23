@@ -3,8 +3,10 @@ import json
 from pathlib import Path
 import pandas as pd
 import srsly
+from tqdm import tqdm
 
-from config import GIT_1_ANNO_JSONL_PATH, MITRE_LABELS_JSON_PATH, DST_EXPERIMENT_ANNO_JSONL_DIR
+from config import GIT_1_ANNO_JSONL_PATH, MITRE_LABELS_JSON_PATH, DST_EXPERIMENT_ANNO_JSONL_DIR, \
+    GIT_1_DEV_ANNO_JSONL_PATH
 
 
 def create_df_index_of_jsonl_by_meta_and_spans(annotated_jsonl_datafile):
@@ -17,7 +19,7 @@ def create_df_index_of_jsonl_by_meta_and_spans(annotated_jsonl_datafile):
     with open(annotated_jsonl_datafile, "r") as fr:
         for idx, line in enumerate(fr):
             if idx % 100000 == 0:
-                print(idx)
+                print("create_df_index: line =", idx)
             line_json = srsly.json_loads(line)
             try:
                 line_text = line_json["text"]
@@ -30,7 +32,7 @@ def create_df_index_of_jsonl_by_meta_and_spans(annotated_jsonl_datafile):
 
             spans_dict = collections.defaultdict(list)
             for span in spans:
-                span_text = span["text"]
+                span_text = str(span["text"]).lower()  # save just lower-case values
                 span_label = span["label"]
                 spans_dict[span_label].append(span_text)
 
@@ -40,15 +42,12 @@ def create_df_index_of_jsonl_by_meta_and_spans(annotated_jsonl_datafile):
 
         df = pd.DataFrame(df_list_of_lists, columns=df_columns)
         _save_zip_of_df(df, annotated_jsonl_datafile)
-        #                                                         compress_type=zipfile.ZIP_DEFLATED)
 
 
 def filter_to_sentences_contain_group_name(annotated_jsonl_datafile, contain_group_name_annotated_jsonl_datafile):
     index_df = _load_df_index_of_anno_jsnol_file(annotated_jsonl_datafile)
     only_contain_group_name_df = index_df[index_df["group_name"] != str([])]
     print(f"Found {only_contain_group_name_df.shape[0]} lines with group_names")
-    # _save_zip_of_df(only_contain_group_name_df, Path(contain_group_name_annotated_jsonl_datafile).parent,
-    #                 "only_contain_group_name_df")
     _save_zip_of_df(only_contain_group_name_df, contain_group_name_annotated_jsonl_datafile)
 
     with open(contain_group_name_annotated_jsonl_datafile, "w") as fw:
@@ -59,62 +58,62 @@ def filter_to_sentences_contain_group_name(annotated_jsonl_datafile, contain_gro
 
 
 def split_by_year(annotated_jsonl_datafile, exp_dir, max_year_for_train):
-    index_df = _load_df_index_of_anno_jsnol_file(annotated_jsonl_datafile)
-    train_df = index_df[index_df.year <= max_year_for_train]
-    test_df = index_df[index_df.year > max_year_for_train]
-
     train_jsonl_path = Path(exp_dir) / f"train_until_{max_year_for_train}.jsonl"
     test_jsonl_path = Path(exp_dir) / f"test_from_{max_year_for_train + 1}.jsonl"
+    index_df = _load_df_index_of_anno_jsnol_file(annotated_jsonl_datafile)
 
-    # save experiment index into csv-zip
-    _save_zip_of_df(train_df, train_jsonl_path)
-    _save_zip_of_df(test_df, test_jsonl_path)
+    # train-test split
+    index_df["is_train"] = index_df.year <= max_year_for_train
+    index_df["is_test"] = index_df.year > max_year_for_train
 
-    print(f"train years {sorted(list(train_df.year.unique()))}")
-    print(f"test years {sorted(list(test_df.year.unique()))}")
+    print(f"train years {sorted(list(index_df[index_df['is_train']].year.unique()))}")
+    print(f"test years {sorted(list(index_df[index_df['is_test']].year.unique()))}")
 
-    _save_split_train_test_jsonl(annotated_jsonl_datafile, train_jsonl_path, test_jsonl_path, train_df, test_df)
+    _save_split_train_test_jsonl(annotated_jsonl_datafile, train_jsonl_path, test_jsonl_path, index_df)
 
 
-def split_by_group_name(annotated_jsonl_datafile, exp_dir, train_group_names, test_group_names):
+def dev_split_by_group_name(annotated_jsonl_datafile, exp_dir, train_group_names, test_group_names):
+    """
+        The dataset would become really small -> Useful for development
+        Test include only sentences with test_group_names
+        Train include only sentences with train_group_names
+    """
     train_jsonl_path = Path(exp_dir) / f"train_by_names.jsonl"
     test_jsonl_path = Path(exp_dir) / f"test_by_names.jsonl"
+    # make sure labels are lower-case only
+    train_group_names = list(pd.unique([str(name).lower() for name in train_group_names]))
+    test_group_names = list(pd.unique([str(name).lower() for name in test_group_names]))
     info_train_str = f"train_group_names({len(train_group_names)}): {train_group_names}"
-    info_test_str = f"train_group_names({len(test_group_names)}): {test_group_names}"
-    f = open(exp_dir / "describe.txt", "w")
-    f.write(info_train_str + "\n")
-    f.write(info_test_str + "\n")
+    info_test_str = f"test_group_names({len(test_group_names)}): {test_group_names}"
+    with open(exp_dir / "describe.txt", "w") as f:
+        f.write(info_train_str + "\n")
+        f.write(info_test_str + "\n")
     print(info_train_str)
     print(info_test_str)
 
-    only_contain_group_name_df = _load_df_index_of_anno_jsnol_file(annotated_jsonl_datafile)
-    only_contain_group_name_df["group_name"] = only_contain_group_name_df["group_name"].apply(eval)
+    index_df = _load_df_index_of_anno_jsnol_file(annotated_jsonl_datafile)
+    index_df["group_name"] = index_df["group_name"].apply(eval)
 
-    def is_in_valid_names(names, valid_names):
+    def is_in_valid_names_only(names, valid_names, invalid_names):
+        names = [name.lower() for name in names]
+        valid_names = [name.lower() for name in valid_names]
+        invalid_names = [name.lower() for name in invalid_names]
         for name in names:
             if name in valid_names:
+                # Contain valid name :)
+                # just check it doesn't contain an invalid name too
+                for name in names:
+                    if name in invalid_names:
+                        return False
                 return True
         return False
 
-    only_contain_group_name_df["is_train"] = only_contain_group_name_df["group_name"].apply(
-        lambda groups_list: is_in_valid_names(groups_list, train_group_names))
-    # only_contain_group_name_df["is_test"] = only_contain_group_name_df["group_name"].apply(lambda groups_list: is_in_valid_names(groups_list, test_group_names))
+    index_df["is_train"] = index_df["group_name"].apply(
+        lambda groups_list: is_in_valid_names_only(groups_list, train_group_names, test_group_names))
+    index_df["is_test"] = index_df["group_name"].apply(
+        lambda groups_list: is_in_valid_names_only(groups_list, test_group_names, train_group_names))
 
-    train_df = only_contain_group_name_df[only_contain_group_name_df["is_train"]]
-    test_df = only_contain_group_name_df[~only_contain_group_name_df["is_train"]]
-    all_size = only_contain_group_name_df.shape[0]
-    train_size = train_df.shape[0]
-    test_size = test_df.shape[0]
-    assert train_size + test_size == all_size
-    split_info = f"split_by_group_name:" \
-                 f" train({train_size}):test({test_size}) ({train_size / all_size:.2f}:{test_size / all_size:.2f})"
-    print(split_info)
-    f.write(split_info + "\n")
-    f.close()
-
-    _save_split_train_test_jsonl(annotated_jsonl_datafile, train_jsonl_path, test_jsonl_path, train_df, test_df)
-    _save_zip_of_df(train_df, train_jsonl_path)
-    _save_zip_of_df(test_df, test_jsonl_path)
+    _save_split_train_test_jsonl(annotated_jsonl_datafile, train_jsonl_path, test_jsonl_path, index_df)
 
 
 def _get_mitre_labels_dict():
@@ -159,46 +158,53 @@ def _load_df_index_of_anno_jsnol_file(anno_jsnol_file_path):
     return pd.read_csv(dst_zip_path)
 
 
-def _save_split_train_test_jsonl(annotated_jsonl_datafile, train_jsonl_path, test_jsonl_path, train_df, test_df):
+def _save_split_train_test_jsonl(annotated_jsonl_datafile, train_jsonl_path, test_jsonl_path, train_test_df):
+    count_excluded_lines = 0
+    train_df = train_test_df[train_test_df["is_train"]]
+    test_df = train_test_df[train_test_df["is_test"]]
+    all_size = train_test_df.shape[0]
+    train_size = train_df.shape[0]
+    test_size = test_df.shape[0]
+    print(f"{train_size=}, {test_size=}, {all_size=} (Exclude {all_size - test_size - train_size} lines)")
+    print(f"split: ({train_size}):test({test_size}) ({train_size / all_size:.2f}:{test_size / all_size:.2f})")
+
+    # save experiment index into csv-zip
+    _save_zip_of_df(train_df, train_jsonl_path)
+    _save_zip_of_df(test_df, test_jsonl_path)
+
     print(f"split {annotated_jsonl_datafile} into:\n - {train_jsonl_path}\n - {test_jsonl_path}")
     with open(annotated_jsonl_datafile, "r") as f_all:
         with open(train_jsonl_path, "w") as f_train:
             with open(test_jsonl_path, "w") as f_test:
-                for idx, line in enumerate(f_all):
+                for idx, line in enumerate(tqdm(f_all, total=train_test_df.shape[0])):
                     if idx in train_df.index:
                         f_train.write(line)
                     elif idx in test_df.index:
                         f_test.write(line)
                     else:
-                        raise ValueError(f"idx({idx}) not in train and not in test")
+                        count_excluded_lines += 1
+    if count_excluded_lines > 0:
+        print(f" ---- Exclude {count_excluded_lines} lines (by split decisions) ----")
 
 
 if __name__ == "__main__":
     # create index_df
     create_df_index_of_jsonl_by_meta_and_spans(GIT_1_ANNO_JSONL_PATH)
 
-    # exp1 - all labels, all data split by years
-    exp_dir = DST_EXPERIMENT_ANNO_JSONL_DIR / "exp1"
+    # create a smaller dev dataset with only lines contained some group_name
+    filter_to_sentences_contain_group_name(GIT_1_ANNO_JSONL_PATH, GIT_1_DEV_ANNO_JSONL_PATH)
+
+    # exp1 - Full dataset split by years
+    exp_dir = DST_EXPERIMENT_ANNO_JSONL_DIR / "full_dataset_split_by_years"
     exp_dir.mkdir(exist_ok=True, parents=True)
     print(f"create dir {exp_dir}")
     split_by_year(GIT_1_ANNO_JSONL_PATH, exp_dir, 2016)
 
-    # create smaller dev dataset with only lines contained some group_name
-    contain_group_name_annotated_jsonl_datafile = DST_EXPERIMENT_ANNO_JSONL_DIR / "only_contain_group_name" / "only_contain_group_name.jsonl"
-    contain_group_name_annotated_jsonl_datafile.parent.mkdir(exist_ok=True, parents=True)
-    filter_to_sentences_contain_group_name(GIT_1_ANNO_JSONL_PATH, contain_group_name_annotated_jsonl_datafile)
-
-    # exp2 - only_contain_group_name, split_by_group_name 80 20
-    # exp3 - all labels, split_by_group_name 80 20
-    contain_group_name_annotated_jsonl_datafile = DST_EXPERIMENT_ANNO_JSONL_DIR / "only_contain_group_name" / "only_contain_group_name.jsonl"
-    exp_dir = DST_EXPERIMENT_ANNO_JSONL_DIR / "exp2"
+    # exp2 - Only the dev, split_by_group_name 80 20
+    exp_dir = DST_EXPERIMENT_ANNO_JSONL_DIR / "dev_dataset_split_by_names"
     exp_dir.mkdir(exist_ok=True, parents=True)
     mitre_labels = _get_mitre_labels_dict()
     group_names = mitre_labels["group_name"]
     train_group_names = group_names[:int(len(group_names) * 0.8)]
     test_group_names = group_names[int(len(group_names) * 0.8):]
-    split_by_group_name(contain_group_name_annotated_jsonl_datafile, exp_dir, train_group_names, test_group_names)
-
-    exp_dir = DST_EXPERIMENT_ANNO_JSONL_DIR / "exp3"
-    exp_dir.mkdir(exist_ok=True, parents=True)
-    split_by_group_name(GIT_1_ANNO_JSONL_PATH, exp_dir, train_group_names, test_group_names)
+    dev_split_by_group_name(GIT_1_DEV_ANNO_JSONL_PATH, exp_dir, train_group_names, test_group_names)
