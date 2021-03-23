@@ -42,6 +42,7 @@ def create_df_index_of_jsonl_by_meta_and_spans(annotated_jsonl_datafile):
 
         df = pd.DataFrame(df_list_of_lists, columns=df_columns)
         _save_zip_of_df(df, annotated_jsonl_datafile)
+        _save_zip_of_df(df, "index_df.zip")
 
 
 def filter_to_sentences_contain_group_name(annotated_jsonl_datafile, contain_group_name_annotated_jsonl_datafile):
