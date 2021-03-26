@@ -126,3 +126,17 @@ commands:
       - "assets/${vars.train}_by_model.jsonl"
       - "assets/${vars.dev}.jsonl"
       - "assets/${vars.dev}_by_model.jsonl"
+
+  - name: "evaluate-in-depth"
+    help: "evaluate-in-depth on each name"
+    script:
+      - "python scripts/evaluate_on_each_name.py assets/${vars.train}_df.zip assets/${vars.train}_by_model_df.zip training/train_names_metrics.csv"
+      - "python scripts/evaluate_on_each_name.py assets/${vars.dev}_df.zip assets/${vars.dev}_by_model_df.zip training/test_names_metrics.csv"
+    deps:
+      - "assets/${vars.train}.jsonl"
+      - "assets/${vars.train}_by_model.jsonl"
+      - "assets/${vars.dev}.jsonl"
+      - "assets/${vars.dev}_by_model.jsonl"
+    outputs:
+      - "training/train_names_metrics.csv"
+      - "training/test_names_metrics.csv"
