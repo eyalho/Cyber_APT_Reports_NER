@@ -111,13 +111,12 @@ commands:
   - name: "index-jsnol-into-df"
     help: "Index the jsnol files by simple dataframes and deserialized into zipped csv"
     script:
-      - "python scripts/index_jsonl_into_df.py ${vars.origin_labels_json} assets/${vars.train}.jsonl assets/${vars.train}_df.zip"
-      - "python scripts/index_jsonl_into_df.py ${vars.origin_labels_json} assets/${vars.train}_by_model.jsonl assets/${vars.train}_by_model_df.zip"
-      - "python scripts/index_jsonl_into_df.py ${vars.origin_labels_json} assets/${vars.dev}.jsonl assets/${vars.dev}_df.zip"
-      - "python scripts/index_jsonl_into_df.py ${vars.origin_labels_json} assets/${vars.dev}_by_model.jsonl assets/${vars.dev}_by_model_df.zip"
+      - "python scripts/index_jsonl_into_df.py assets/${vars.train}.jsonl assets/${vars.train}_df.zip"
+      - "python scripts/index_jsonl_into_df.py assets/${vars.train}_by_model.jsonl assets/${vars.train}_by_model_df.zip"
+      - "python scripts/index_jsonl_into_df.py assets/${vars.dev}.jsonl assets/${vars.dev}_df.zip"
+      - "python scripts/index_jsonl_into_df.py assets/${vars.dev}_by_model.jsonl assets/${vars.dev}_by_model_df.zip"
     deps:
       - "scripts/index_jsonl_into_df.py"
-      - "${vars.origin_labels_json}"
       - "assets/${vars.train}.jsonl"
       - "assets/${vars.train}_by_model.jsonl"
       - "assets/${vars.dev}.jsonl"

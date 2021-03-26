@@ -7,11 +7,9 @@ import typer
 from tqdm import tqdm
 
 
-def create_df_index_of_jsonl_by_meta_and_spans(origin_labels_json, annotated_jsonl_datafile, dst_zip_path):
-    labels_dict = get_origin_labels_dict(origin_labels_json)
-    list_of_labels = labels_dict.keys()
+def create_df_index_of_jsonl_by_meta_and_spans(annotated_jsonl_datafile, dst_zip_path):
+    list_of_labels = get_list_of_entities_types(annotated_jsonl_datafile)
     df_columns = ["git_repo", "year", "filename"] + list(list_of_labels)
-
     df_list_of_lists = []
     with open(annotated_jsonl_datafile, "r") as fr:
         for count_lines, _ in enumerate(fr):
@@ -31,7 +29,7 @@ def create_df_index_of_jsonl_by_meta_and_spans(origin_labels_json, annotated_jso
 
             spans_dict = collections.defaultdict(list)
             for span in spans:
-                span_text = span["text"]
+                span_text = str(span["text"]).lower()
                 span_label = span["label"]
                 spans_dict[span_label].append(span_text)
 
@@ -43,10 +41,16 @@ def create_df_index_of_jsonl_by_meta_and_spans(origin_labels_json, annotated_jso
         save_zip_of_df(df, dst_zip_path)
 
 
-def get_origin_labels_dict(origin_labels_json):
-    with Path(origin_labels_json).open("r", encoding="utf8") as f:
-        mitre_labels_dict = json.load(f)
-    return mitre_labels_dict
+def get_list_of_entities_types(annotated_jsonl_datafile):
+    entities_types = set()
+    with open(annotated_jsonl_datafile, "r") as fr:
+        for line in fr:
+            line_json = srsly.json_loads(line)
+            for span in line_json.get("spans"):
+                entity_type = span.get("label")
+                if entity_type:
+                    entities_types.add(entity_type)
+    return list(entities_types)
 
 
 def save_zip_of_df(df, dst_zip_path):
@@ -62,8 +66,8 @@ def save_zip_of_df(df, dst_zip_path):
     return dst_zip_path
 
 
-def main(origin_labels_json: str, jsonl_path: str, df_zipped_path: str):
-    create_df_index_of_jsonl_by_meta_and_spans(origin_labels_json, jsonl_path, df_zipped_path)
+def main(jsonl_path: str, df_zipped_path: str):
+    create_df_index_of_jsonl_by_meta_and_spans(jsonl_path, df_zipped_path)
 
 
 if __name__ == "__main__":
