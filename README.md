@@ -1,6 +1,6 @@
 <!-- SPACY PROJECT: AUTO-GENERATED DOCS START (do not remove) -->
 
-# spaCy Project: Detecting cyber related names based on APT reports (Named Entity Recognition)
+# 🪐 spaCy Project: Detecting cyber related names based on APT reports (Named Entity Recognition)
 
 This project uses [`sense2vec`](https://github.com/explosion/sense2vec) and [Prodigy](https://prodi.gy) to bootstrap an NER model to detect fashion brands in [APTCyberCollection comments](https://files.pushshift.io/reddit/comments/). For more details, see [our blog post](https://explosion.ai/blog/sense2vec-reloaded#annotation).
 
@@ -26,6 +26,7 @@ Commands are only re-run if their inputs have changed.
 | `visualize-data` | Explore the annotated data in an interactive Streamlit app |
 | `create-jsnol-anno-by-model` | Use the trained model and re-label the jsnol based on it prediction |
 | `index-jsnol-into-df` | Index the jsnol files by simple dataframes and deserialized into zipped csv |
+| `evaluate-in-depth` | evaluate-in-depth on each name |
 
 ### ⏭ Workflows
 
@@ -36,7 +37,7 @@ inputs have changed.
 
 | Workflow | Steps |
 | --- | --- |
-| `all` | `preprocess` &rarr; `train` &rarr; `evaluate` &rarr; `create-jsnol-anno-by-model` &rarr; `index-jsnol-into-df` |
+| `all` | `preprocess` &rarr; `train` &rarr; `evaluate` &rarr; `create-jsnol-anno-by-model` &rarr; `index-jsnol-into-df` &rarr; `evaluate-in-depth` |
 
 ### 🗂 Assets
 

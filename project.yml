@@ -31,6 +31,7 @@ workflows:
     - evaluate
     - create-jsnol-anno-by-model
     - index-jsnol-into-df
+    - evaluate-in-depth
 
 # via "spacy project run [command] [path]".
 # shown when executing "spacy project run [optional command] [path] --help".
